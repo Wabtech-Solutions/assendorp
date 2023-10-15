@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/layout', function () {
-    return view('layout');
+// Route::get('/layout', function () {
+//     return view('layout');
+// });
+
+Route::get('/over', function () {
+    return view('over');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
+Route::post('/', [MailController::class,'planRijles'])->name('planRijles');
+Route::post('/contact', [MailController::class,'contact'])->name('contact');

@@ -62,6 +62,7 @@
                                             assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
                                         <p>✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen</p>
                                         <a href="/over-ons" class="btn style1">Meer info</a>
+                                        <div id="aanmelden"></div>
                                     </div>
                                 </div>
                             </div>
@@ -74,19 +75,28 @@
             <div class="book-course-wrap style1">
                 <div class="container">
                     <div class="book-course-form">
-                        <h4>Begin met lessen</h4>
-                        <form action="#" class="booking-form">
+                        @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                        <h4 style="margin-bottom: 1px">Begin met lessen</h4>
+
+                        <form method="POST" action="/" class="booking-form">
+                            @csrf
                             <div class="form-group">
                                 <label for="name">Volledige Naam*</label>
-                                <input type="text" id="name" placeholder="Naam" required>
+                                <input name="name" required type="text" id="name" placeholder="Naam" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email*</label>
-                                <input type="email" id="email" placeholder="Email" required>
+                                <label for="telefoon">Telefoon*</label>
+                                <input name="telefoon" required type="number" id="telefoon" placeholder="0612345678" required>
                             </div>
+
                             <div class="form-group">
                                 <label for="course-plan">Kies een pakket</label>
-                                <select name="course-plan" id="course-plan">
+
+                                <select name="pakket" required id="course-plan">
                                     <option value="0">Ik weet het nog niet</option>
                                     <option value="A">Pakket A</option>
                                     <option value="B">Pakket B</option>
@@ -95,7 +105,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="date">Datum voor intake (telefonisch)</label>
-                                <input type="date" id="date" required>
+                                <input name="date" required type="date" id="date" required>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn style1 w-100 d-block">Plan intake</button>
@@ -123,16 +133,13 @@
                                 <div class="content-title style1">
                                     <span>Over ons</span>
                                     <h2>Autorijschool Assendorp</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum amet avoilble but majority have
-                                        suffered alteration in some form, by injected humur or randomise words which don't
-                                        sure amet sit dolor quras solo dolor.</p>
+                                    <p>Autorijschool Assendorp in Zwolle is een goede en betrouwbare rijschool die kwalitatief goede rijlessen aanbiedt met een goede prijs/kwaliteitsverhouding, waar al veel mensen voordelig zijn geslaagd voor het rijbewijs. </p>
                                 </div>
                                 <div class="ceo-message">
-                                    <p>"Lorem ipsum dolor sit amet consec tetur adiping slicing elit. Archite tempo ribus
-                                        veniam placeat provident ipsam amet sit"</p>
+                                    <p>"Geduld en persoonlijke ondersteuning is de snelste weg naar een geslaagd examen."</p>
                                     <h6>Rob, Eigenaar &amp; Instructeur</h6>
                                 </div>
-                                <a href="about.html" class="btn style1">Lees meer</a>
+                                <a href="/over" class="btn style1">Lees meer</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +159,7 @@
                     <div class="course-slider-one owl-carousel">
                         <div class="course-card style2">
                             <div class="course-img">
-                                <img src="assets/img/courses/course-4.jpg" alt="Image">
+                                <img src="assets/img/courses/22.webp" alt="Image">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
@@ -164,69 +171,54 @@
                                 <h3><a href="course-details.html">Pakket A</a></h3>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
                                 <div class="course-author-wrap">
-                                    <div class="course-author">
-                                        <span class="course-author-img">
-                                            <img src="assets/img/team/instructor-4.jpg" alt="Image">
-                                        </span>
-                                        <a href="team-details.html">Rob</a>
-                                    </div>
+
                                     <p class="course-price">€ 1992,-</p>
                                 </div>
-                                <a class="btn style2" href="course-details.html">
+                                <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="course-card style2">
                             <div class="course-img">
-                                <img src="assets/img/courses/course-4.jpg" alt="Image">
+                                <img src="assets/img/courses/22.webp" alt="Image">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket A</a></h3>
+                                <h3><a href="course-details.html">Pakket B</a></h3>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
                                 <div class="course-author-wrap">
-                                    <div class="course-author">
-                                        <span class="course-author-img">
-                                            <img src="assets/img/team/instructor-4.jpg" alt="Image">
-                                        </span>
-                                        <a href="team-details.html">Rob</a>
-                                    </div>
-                                    <p class="course-price">€ 1992,-</p>
+
+                                    <p class="course-price">€ 2282,-</p>
                                 </div>
-                                <a class="btn style2" href="course-details.html">
+                                <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="course-card style2">
                             <div class="course-img">
-                                <img src="assets/img/courses/course-4.jpg" alt="Image">
+                                <img src="assets/img/courses/22.webp" alt="Image">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket A</a></h3>
+                                <h3><a href="course-details.html">Pakket C</a></h3>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
                                 <div class="course-author-wrap">
-                                    <div class="course-author">
-                                        <span class="course-author-img">
-                                            <img src="assets/img/team/instructor-4.jpg" alt="Image">
-                                        </span>
-                                        <a href="team-details.html">Rob</a>
-                                    </div>
-                                    <p class="course-price">€ 1992,-</p>
+
+                                    <p class="course-price">€ 2572,-</p>
                                 </div>
-                                <a class="btn style2" href="course-details.html">
+                                <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>
@@ -268,229 +260,12 @@
                                         </p>
                                     </div>
                                 </div>
-                                        <a href="vehicle-details.html" class="btn style2">Plan je rijles<i
+                                        <a href="#aanmelden" class="btn style2">Plan je rijles<i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
 
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <div class="cta-wrap style1 bg-downriver ptb-100">
-                <div class="container">
-                    <div class="row align-items-center cta-text">
-                        <div class="col-lg-8 col-md-7">
-                            <div class="content-title">
-                                <h2 class="text-white">Start Learning To Drive Today</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-5 text-end">
-                            <a href="course-one.html" class="btn style1">Admission Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <section class="team-wrap pt-100 pb-75">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
-                            <div class="section-title style1 text-center mb-40">
-                                <span>OUR TEAM</span>
-                                <h2>Our Professional Instructor</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-slider-one owl-carousel">
-                        <div class="team-card style2">
-                            <div class="team-img">
-                                <img src="assets/img/team/team-2.jpg" alt="Image">
-                                <ul class="social-profile list-style style1">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team-info-wrap">
-                                <div class="team-info">
-                                    <h3><a href="team-details.html">Mossie Ullrich</a></h3>
-                                    <span>Driving Instructor</span>
-                                </div>
-                                <a href="team-details.html" class="team-link"><i
-                                        class="flaticon-plus-symbol-button"></i></a>
-                            </div>
-                            <a href="team-details.html" class="btn style2">Read More <i
-                                    class="flaticon-right-arrow"></i></a>
-                        </div>
-                        <div class="team-card style2">
-                            <div class="team-img">
-                                <img src="assets/img/team/team-3.jpg" alt="Image">
-                                <ul class="social-profile list-style style1">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team-info-wrap">
-                                <div class="team-info">
-                                    <h3><a href="team-details.html">Jackie Schmeler</a></h3>
-                                    <span>Senior Instructor</span>
-                                </div>
-                                <a href="team-details.html" class="team-link"><i
-                                        class="flaticon-plus-symbol-button"></i></a>
-                            </div>
-                            <a href="team-details.html" class="btn style2">Read More <i
-                                    class="flaticon-right-arrow"></i></a>
-                        </div>
-                        <div class="team-card style2">
-                            <div class="team-img">
-                                <img src="assets/img/team/team-4.jpg" alt="Image">
-                                <ul class="social-profile list-style style1">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team-info-wrap">
-                                <div class="team-info">
-                                    <h3><a href="team-details.html">Benett Watson</a></h3>
-                                    <span>Defensive Instructor</span>
-                                </div>
-                                <a href="team-details.html" class="team-link"><i
-                                        class="flaticon-plus-symbol-button"></i></a>
-                            </div>
-                            <a href="team-details.html" class="btn style2">Read More <i
-                                    class="flaticon-right-arrow"></i></a>
-                        </div>
-                        <div class="team-card style2">
-                            <div class="team-img">
-                                <img src="assets/img/team/team-1.jpg" alt="Image">
-                                <ul class="social-profile list-style style1">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team-info-wrap">
-                                <div class="team-info">
-                                    <h3><a href="team-details.html">Erik Ondricka</a></h3>
-                                    <span>Senior Instructor</span>
-                                </div>
-                                <a href="team-details.html" class="team-link"><i
-                                        class="flaticon-plus-symbol-button"></i></a>
-                            </div>
-                            <a href="team-details.html" class="btn style2">Read More <i
-                                    class="flaticon-right-arrow"></i></a>
-                        </div>
-                        <div class="team-card style2">
-                            <div class="team-img">
-                                <img src="assets/img/team/team-5.jpg" alt="Image">
-                                <ul class="social-profile list-style style1">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="team-info-wrap">
-                                <div class="team-info">
-                                    <h3><a href="team-details.html">Savannah Ashley</a></h3>
-                                    <span>Assistant Driver</span>
-                                </div>
-                                <a href="team-details.html" class="team-link"><i
-                                        class="flaticon-plus-symbol-button"></i></a>
-                            </div>
-                            <a href="team-details.html" class="btn style2">Read More <i
-                                    class="flaticon-right-arrow"></i></a>
                         </div>
                     </div>
                 </div>
@@ -508,10 +283,10 @@
                                     </span>
                                     <div class="counter-text">
                                         <h2 class="counter-num">
-                                            <span class="odometer" data-count="6500"></span>
+                                            <span class="odometer" data-count="1200"></span>
                                             <span class="target">+</span>
                                         </h2>
-                                        <p>Learn From Here</p>
+                                        <p>Zijn geslaagd</p>
                                     </div>
                                 </div>
                             </div>
@@ -522,10 +297,10 @@
                                     </span>
                                     <div class="counter-text">
                                         <h2 class="counter-num">
-                                            <span class="odometer" data-count="100"></span>
+                                            <span class="odometer" data-count="20"></span>
                                             <span class="target">+</span>
                                         </h2>
-                                        <p>Top Instructors</p>
+                                        <p>Jaar ervaring</p>
                                     </div>
                                 </div>
                             </div>
@@ -536,10 +311,10 @@
                                     </span>
                                     <div class="counter-text">
                                         <h2 class="counter-num">
-                                            <span class="odometer" data-count="550"></span>
+                                            <span class="odometer" data-count="38"></span>
                                             <span class="target">+</span>
                                         </h2>
-                                        <p>Current Student</p>
+                                        <p>Huidige studenten</p>
                                     </div>
                                 </div>
                             </div>
@@ -550,10 +325,10 @@
                                     </span>
                                     <div class="counter-text">
                                         <h2 class="counter-num">
-                                            <span class="odometer" data-count="940"></span>
+                                            <span class="odometer" data-count="20000"></span>
                                             <span class="target">+</span>
                                         </h2>
-                                        <p>Own Vehicles</p>
+                                        <p>lessen</p>
                                     </div>
                                 </div>
                             </div>
@@ -563,206 +338,38 @@
             </div>
 
 
-            <section class="testimonial-wrap ptb-100">
+            <section class="testimonial-wrap ptb-100" id="refereties">
                 <div class="container">
                     <div class="section-title style1 text-center mb-40">
-                        <span>CLIENTS FEEDBACK POSTS</span>
-                        <h2>What Our Customer Says</h2>
+                        <span>Referenties</span>
+                        <h2>Dit is wat klanten zeggen</h2>
                     </div>
-                    <div class="testimonial-slider-two owl-carousel">
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-1.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Hayleym Pheobe</h3>
-                                    <span>Co-Founder, Olley Inc</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-2.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Jim Morison</h3>
-                                    <span>Enterpreneur</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-3.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Alex Cruis</h3>
-                                    <span>CEO, Brandix ltd</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-4.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Harry Jackson</h3>
-                                    <span>Founder, IBAC</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-5.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Martina Haris</h3>
-                                    <span>Enterpreneur</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card style1">
-                            <p class="client-quote">
-                                Nunc quam arcu, pretium quis quam sed aoreet efficitur liuam volutpat. lobortis sem
-                                consequat consequat impe nulla viverraut loremut tetur diam nunc bibendum impea Lorem ipsum
-                                dolor sit amet, consec isicing elit.
-                            </p>
-                            <div class="client-info-wrap">
-                                <div class="client-img">
-                                    <img src="assets/img/testimonials/client-6.jpg" alt="Image">
-                                </div>
-                                <div class="client-info">
-                                    <h3>Anjelic Lisa</h3>
-                                    <span>Founder, Lexamd Inc</span>
-                                </div>
-                                <div class="quote-icon">
-                                    <i class="flaticon-quote"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div id="disqus_thread"></div>
                 </div>
             </section>
 
 
-            <section class="blog-wrap pt-100 pb-75 bg-concrete">
-                <div class="container">
-                    <div class="section-title style1 text-center mb-40">
-                        <span>RECENT POSTS</span>
-                        <h2>Read Our Latest News</h2>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="blog-card style2">
-                                <div class="blog-img">
-                                    <img src="assets/img/blog/blog-5.jpg" alt="Image">
-                                    <p class="blog-date">12 Sep</p>
-                                </div>
-                                <div class="blog-info">
-                                    <ul class="blog-metainfo  list-style">
-                                        <li><i class="flaticon-user-1"></i> <a href="posts-by-author.html">Admin</a></li>
-                                        <li><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>0
-                                            Comment</li>
-                                    </ul>
-                                    <h3><a href="blog-details-right-sidebar.html">Lighting The Way With Guest Daniel
-                                            Stern</a></h3>
-                                    <p>It is a long established fact that lorem will be when looking as it sito.</p>
-                                    <a href="blog-details-right-sidebar.html" class="btn style2">Read More
-                                        <i class="flaticon-right-arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="blog-card style2">
-                                <div class="blog-img">
-                                    <img src="assets/img/blog/blog-4.jpg" alt="Image">
-                                    <p class="blog-date">25 Aug</p>
-                                </div>
-                                <div class="blog-info">
-                                    <ul class="blog-metainfo  list-style">
-                                        <li><i class="flaticon-user-1"></i> <a href="posts-by-author.html">Admin</a></li>
-                                        <li><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>1
-                                            Comment</li>
-                                    </ul>
-                                    <h3><a href="blog-details-right-sidebar.html">How To Safely Road-trip During This
-                                            Pandemic</a></h3>
-                                    <p>It is a long established fact that lorem will be when looking as it sito.</p>
-                                    <a href="blog-details-right-sidebar.html" class="btn style2">Read More
-                                        <i class="flaticon-right-arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="blog-card style2">
-                                <div class="blog-img">
-                                    <img src="assets/img/blog/blog-6.jpg" alt="Image">
-                                    <p class="blog-date">22 Aug</p>
-                                </div>
-                                <div class="blog-info">
-                                    <ul class="blog-metainfo  list-style">
-                                        <li><i class="flaticon-user-1"></i> <a href="posts-by-author.html">Admin</a></li>
-                                        <li><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>0
-                                            Comment</li>
-                                    </ul>
-                                    <h3><a href="blog-details-right-sidebar.html">Why Auto Driving Will Help You To
-                                            Pass</a></h3>
-                                    <p>It is a long established fact that lorem will be when looking as it sito.</p>
-                                    <a href="blog-details-right-sidebar.html" class="btn style2">Read More
-                                        <i class="flaticon-right-arrow"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
 
     </html>
+
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://autorijschoolassendorp.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 @endsection

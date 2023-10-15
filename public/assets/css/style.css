@@ -1046,7 +1046,7 @@ select {
 }
 
 .bg-downriver {
-  background-color: #091851;
+  background-color: #5e0c0c;
 }
 
 .bg-catskill {
@@ -1767,7 +1767,7 @@ select {
 }
 
 .header-wrap .header-top .header-top-left .contact-info li a:hover, .header-wrap .header-top .header-top-left .contact-info li p:hover {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .header-wrap .header-top .header-top-right .social-profile {
@@ -1843,7 +1843,7 @@ select {
 }
 
 .header-wrap.style2 .header-top {
-  background: #091851;
+  background: #5e0c0c;
 }
 
 .header-wrap.style2 .header-top .header-top-left .contact-info li a, .header-wrap.style2 .header-top .header-top-left .contact-info li p {
@@ -2033,7 +2033,7 @@ select {
 
 @media only screen and (max-width: 767px) {
   .navbar-brand img {
-    max-width: 120px;
+    max-width: 80px;
   }
   .header-wrap.sticky {
     top: 0;
@@ -2049,7 +2049,7 @@ select {
             justify-content: flex-start;
   }
   .header-wrap.style1, .header-wrap.style2 {
-    background-color: #091851;
+    background-color: #5e0c0c;
   }
   .header-wrap.style1 .header-bottom, .header-wrap.style2 .header-bottom {
     padding-left: 0;
@@ -2079,7 +2079,7 @@ select {
     cursor: pointer;
   }
   .header-wrap .header-top .close-sidebar i {
-    color: #091851;
+    color: #5e0c0c;
     font-size: 24px;
   }
   .header-wrap .header-top .header-top-left {
@@ -2182,23 +2182,23 @@ select {
 @media only screen and (max-width: 1199px) {
   .header-wrap .header-top .header-top-left .contact-item p,
   .header-wrap .header-top .header-top-left .contact-item a {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
   }
   .header-wrap.sticky .mobile-menu {
     margin-right: 0;
   }
   .header-wrap.style1 .header-bottom {
-    background-color: #091851;
+    background-color: #5e0c0c00;
   }
   .header-wrap.style1 .mobile-menu a {
     background: #fff;
   }
   .header-wrap.style1 .mobile-menu a i {
-    color: #091851;
+    color: #5e0c0c;
   }
   .header-wrap.style2 .mobile-menu a {
-    background: #091851;
+    background: #5e0c0c;
   }
   .header-wrap.style2 .mobile-menu a i {
     color: #fff;
@@ -2290,7 +2290,7 @@ select {
     margin-left: 10px;
   }
   .header-wrap .header-bottom .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: #091851;
+    color: #5e0c0c;
   }
   .header-wrap .header-bottom .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu {
     margin-left: 20px;
@@ -2342,7 +2342,7 @@ select {
     height: 38px;
     border-radius: 50%;
     text-align: center;
-    background-color: #091851;
+    background-color: #5e0c0c;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2538,7 +2538,7 @@ select {
     position: relative;
   }
   .header-wrap .navbar .navbar-nav .nav-item a:hover, .header-wrap .navbar .navbar-nav .nav-item a:focus, .header-wrap .navbar .navbar-nav .nav-item a.active {
-    color: #091851;
+    color: #5e0c0c;
   }
   .header-wrap .navbar .navbar-nav .nav-item a:hover:after, .header-wrap .navbar .navbar-nav .nav-item a:focus:after, .header-wrap .navbar .navbar-nav .nav-item a.active:after {
     visibility: visible;
@@ -2573,7 +2573,7 @@ select {
     border-radius: 0 0 5px 5px;
     position: absolute;
     visibility: hidden;
-    background: #091851;
+    background: #5e0c0c;
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     -webkit-transition: 0.5s;
@@ -2705,7 +2705,7 @@ select {
 }
 
 .br-4 {
-  background-image: url(../img/breadcrumb/breadcrumb-4.jpg);
+  background-image: url(https://www.autorijschoolassendorp.nl/wp-content/uploads/2020/11/auto-768x576.jpg);
 }
 
 .breadcrumb-wrap {
@@ -3265,7 +3265,7 @@ select {
 }
 
 .pp-post-item .pp-post-info h6 a {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .pp-post-item .pp-post-info span {
@@ -3761,7 +3761,7 @@ select {
     About  Section CSS
 -------------------------------*/
 .about-bg-1 {
-  background-image: url(../img/about/about-img-1.jpg);
+  background-image: url(https://www.autorijschoolassendorp.nl/wp-content/uploads/2020/11/auto-768x576.jpg);
 }
 
 .about-bg-2 {
@@ -4179,7 +4179,7 @@ select {
 }
 
 .course-card .course-info .course-metainfo li a:hover {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .course-card .course-info .course-metainfo li i {
@@ -4464,7 +4464,7 @@ select {
   left: 0;
   z-index: 1;
   width: calc(100% - 50px);
-  background: #091851;
+  background: #5e0c0c;
   border-radius: 5px;
   padding: 20px;
 }
@@ -5355,7 +5355,7 @@ select {
 }
 
 .counter-card-wrap {
-  background-color: #091851;
+  background-color: #5e0c0c;
   padding: 50px 50px 25px;
 }
 
@@ -5474,7 +5474,7 @@ select {
 }
 
 .blog-card .blog-info .blog-metainfo li a:hover {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .blog-card .blog-info .blog-metainfo li i {
@@ -5562,7 +5562,7 @@ select {
 }
 
 .blog-card:hover .blog-info h3 a {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .vehicle-slider-one.owl-carousel .owl-nav button.owl-prev, .vehicle-slider-one.owl-carousel .owl-nav button.owl-next,
@@ -5790,7 +5790,7 @@ select {
 }
 
 .course-details-wrap .course-desc .course-metainfo-wrap .course-metainfo li a:hover {
-  color: #091851;
+  color: #5e0c0c;
 }
 
 .course-details-wrap .course-desc .course-metainfo-wrap .course-metainfo li i {
@@ -6824,7 +6824,7 @@ article .post-img img {
 .footer-wrap {
   position: relative;
   z-index: 1;
-  background-color: #091851;
+  background-color: #201C19;
 }
 
 .footer-wrap .container {
@@ -6834,7 +6834,7 @@ article .post-img img {
 .footer-wrap .footer-widget {
   margin-bottom: 25px;
 }
-
+#5e0c0c
 .footer-wrap .footer-widget .footer-logo {
   display: block;
 }

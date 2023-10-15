@@ -83,8 +83,16 @@
             </div>
             <div class="container">
                 <div class="header-bottom">
+                    <div class="mobile-bar-wrap">
+                        <div class="mobile-sidebar">
+                            <i class="ri-menu-4-line"></i>
+                        </div>
+                        <div class="mobile-menu xl-none">
+                            <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+                        </div>
+                    </div>
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img style="width: 140px" src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2018/08/cropped-logo3-1.png" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
@@ -98,7 +106,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">
+                                    <a href="/over" class="nav-link">
                                         Over ons
                                     </a>
                                 </li>
@@ -119,76 +127,8 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item has-dropdown">
-                                    <a href="#" class="nav-link">
-                                        FAQ
-                                        <i class="ri-arrow-down-s-fill"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Vehicles
-                                                <i class="ri-arrow-right-s-fill"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="vehicles.html" class="nav-link">Our Vehicles</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="vehicle-details.html" class="nav-link">Single Vehicle</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team.html" class="nav-link">Instructor</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="team-details.html" class="nav-link">Instructor Details</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="pricing.html" class="nav-link">Pricing Plan</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">FAQ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User Pages
-                                                <i class="ri-arrow-right-s-fill"></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="login.html" class="nav-link">Login</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">Register</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="recover-password.html" class="nav-link">Recover
-                                                        Password</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">404 Error Page</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Referenties</a>
-                                </li>
-                                <li class="nav-item xl-none">
-                                    <a href="course-one.html" class="btn style1">Get Started</a>
+                                    <a href="/#refereties" class="nav-link">Referenties</a>
                                 </li>
                             </ul>
 
@@ -198,14 +138,7 @@
                             </div>
                         </div>
                     </nav>
-                    <div class="mobile-bar-wrap">
-                        <div class="mobile-sidebar">
-                            <i class="ri-menu-4-line"></i>
-                        </div>
-                        <div class="mobile-menu xl-none">
-                            <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="search-area">
                     <div class="container">
@@ -231,106 +164,94 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
                             <a href="index.html" class="footer-logo">
-                                <img src="assets/img/logo.png" alt="Image">
+                                <img src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2018/08/cropped-logo3-1.png" alt="Image">
                             </a>
-                            <p class="comp-desc">
-                                Lorem ipsum dolor sit amet consec tetur aditon soom isotope elit esumo tempo incidunt
-                                labore dolore magna aliqu core teturos adicing slicing elititeous sedun.
-                            </p>
-                            <ul class="social-profile list-style style1">
+
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">Pagina's</h3>
+                            <ul class="footer-menu list-style">
                                 <li>
-                                    <a target="_blank" href="https://facebook.com/">
-                                        <i class="flaticon-facebook"></i>
+                                    <a href="course-one.html">
+                                        <i class="flaticon-right-arrow-1"></i>
+                                        Goedkope rijles Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://twitter.com/">
-                                        <i class="flaticon-twitter"></i>
+                                    <a href="course-one.html">
+                                        <i class="flaticon-right-arrow-1"></i>
+                                        Rijles Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://instagram.com/">
-                                        <i class="flaticon-instagram"></i>
+                                    <a href="course-one.html">
+                                        <i class="flaticon-right-arrow-1"></i>
+                                        Rijbewijs halen Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a target="_blank" href="https://linkedin.com/">
-                                        <i class="flaticon-linkedin"></i>
+                                    <a href="course-one.html">
+                                        <i class="flaticon-right-arrow-1"></i>
+                                        Goede rijschool Zwolle
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="course-one.html">
+                                        <i class="flaticon-right-arrow-1"></i>
+                                        Snel rijbewijs Zwolle
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6  pe-xl-5">
-                        <div class="footer-widget">
-                            <h3 class="footer-widget-title">Newsletter Signup</h3>
-                            <form action="#" class="newsletter-form">
-                                <p>Lorem ipsum dolor, sit amet consec tetur adipi sicing elit. Quisquam, illum.</p>
-                                <div class="form-group">
-                                    <input type="email" placeholder="Enter Email">
-                                    <button type="submit"><i class="flaticon-right-arrow-1"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                     <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
-                            <h3 class="footer-widget-title">Our Courses</h3>
+                            <h3 class="footer-widget-title">Onze Paketten</h3>
                             <ul class="footer-menu list-style">
                                 <li>
                                     <a href="course-one.html">
                                         <i class="flaticon-right-arrow-1"></i>
-                                        Learn To Drive
+                                        Pakket A
                                     </a>
                                 </li>
                                 <li>
                                     <a href="course-one.html">
                                         <i class="flaticon-right-arrow-1"></i>
-                                        Courses For Adults
+                                        Pakket B
                                     </a>
                                 </li>
                                 <li>
                                     <a href="course-one.html">
                                         <i class="flaticon-right-arrow-1"></i>
-                                        Foreign Driving
+                                        Pakket C
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="course-one.html">
-                                        <i class="flaticon-right-arrow-1"></i>
-                                        Auto Car Lessons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="course-one.html">
-                                        <i class="flaticon-right-arrow-1"></i>
-                                        Courses For Teens
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
-                            <h3 class="footer-widget-title">Contact Us</h3>
+                            <h3 class="footer-widget-title">Contact</h3>
                             <ul class="contact-info list-style">
                                 <li>
                                     <span><i class="flaticon-phone-call"></i></span>
-                                    <h6>Call Now</h6>
-                                    <a href="tel:02459271449">(+024) 592 71 449</a>
+                                    <h6>Telefoon</h6>
+                                    <a href="tel:0642255956">(+31 ) 6 422 55 956</a>
                                 </li>
                                 <li>
                                     <span><i class="flaticon-envelope"></i></span>
                                     <h6>Email</h6>
-                                    <a
-                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#1b686e6b6b74696f5b7f72616e35787476"><span
-                                            class="__cf_email__"
-                                            data-cfemail="13606663637c616753777a69663d707c7e">[email&#160;protected]</span></a>
+                                    <a href="mailto:info@autorijschoolassendorp.nl">info@autorijschoolassendorp.nl</a>
                                 </li>
                                 <li>
                                     <span><i class="flaticon-location-1"></i></span>
-                                    <h6>Location</h6>
-                                    <p>342/A Brooklyn St, Milson Avenue, New York, USA</p>
+                                    <h6>Adres</h6>
+                                    <p>Assendorperdijk 128
+                                        8012 EJ Zwolle</p>
                                 </li>
                             </ul>
                         </div>
@@ -359,7 +280,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/odometer.js"></script>
