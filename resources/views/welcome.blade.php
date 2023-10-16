@@ -232,14 +232,14 @@
                 <div class="container">
                     <div class="content-title style1 text-center mb-40">
                         <span>De Lesauto</span>
-                        <h2>Hiermee ga je lessen</h2>
+                        <h2>Waarmee ga je lessen?</h2>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-5">
                             <div style="" class="">
                                 <div class="vehicle-card style2">
                                     <div class="vehicle-img">
-                                        <img src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2020/11/auto-768x576.jpg"
+                                        <img src="/assets/img/ARA/home1.webp"
                                             alt="Image">
                                     </div>
                                     <div class="vehicle-info">

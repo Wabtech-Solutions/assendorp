@@ -115,8 +115,8 @@
                         <div class="col-xl-5 col-lg-5">
                             <div class="contact-box-wrap">
                                 <div class="content-title style1 mb-30">
-                                    <span>For Any Inquiry Talk With Us</span>
-                                    <h2>Contact Details</h2>
+                                    <span>Of nem contact met ons op</span>
+                                    <h2>Contact informatie</h2>
                                 </div>
                                 <div class="contact-item">
                                     <span class="contact-icon">
@@ -124,8 +124,7 @@
                                     </span>
                                     <div class="contact-info">
                                         <h5>Call Now</h5>
-                                        <a href="tel:44789289528790">+44 7892 8952 8790</a>
-                                        <a href="tel:44789289522345">+44 7892 8952 2345</a>
+                                        <a href="tel:31642255956">(+31 ) 6 422 55 956</a>
                                     </div>
                                 </div>
                                 <div class="contact-item">
@@ -138,19 +137,15 @@
                                             href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0d65686161624d69647778236e6260"><span
                                                 class="__cf_email__"
                                                 data-cfemail="95fdf0f9f9fad5f1fcefe0bbf6faf8">[email&#160;protected]</span></a>
-                                        <a
-                                            href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#c4b7b1b4b4abb6b084a0adbeb1eaa7aba9"><span
-                                                class="__cf_email__"
-                                                data-cfemail="dfacaaafafb0adab9fbbb6a5aaf1bcb0b2">[email&#160;protected]</span></a>
-                                    </div>
+                                        
                                 </div>
                                 <div class="contact-item">
                                     <span class="contact-icon">
                                         <i class="ri-map-pin-line"></i>
                                     </span>
                                     <div class="contact-info">
-                                        <h5>Location</h5>
-                                        <p>30 Division Et, 4578. A Denver, CO 80237, USA</p>
+                                        <h5>Adres</h5>
+                                        <p>Assendorperdijk 128 8012 EJ Zwolle</p>
                                     </div>
                                 </div>
                                 <div class="contact-item">
