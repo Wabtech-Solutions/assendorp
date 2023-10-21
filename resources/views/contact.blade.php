@@ -123,7 +123,7 @@
                                         <i class="ri-phone-line"></i>
                                     </span>
                                     <div class="contact-info">
-                                        <h5>Call Now</h5>
+                                        <h5>Telefoon</h5>
                                         <a href="tel:31642255956">(+31 ) 6 422 55 956</a>
                                     </div>
                                 </div>
@@ -133,12 +133,9 @@
                                     </span>
                                     <div class="contact-info">
                                         <h5>Email</h5>
-                                        <a
-                                            href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0d65686161624d69647778236e6260"><span
-                                                class="__cf_email__"
-                                                data-cfemail="95fdf0f9f9fad5f1fcefe0bbf6faf8">[email&#160;protected]</span></a>
-                                        
+                                        <a href="mailto:info@autorijschoolassendorp.nl">info@autorijschoolassendorp.nl</a>
                                 </div>
+                                <hr>
                                 <div class="contact-item">
                                     <span class="contact-icon">
                                         <i class="ri-map-pin-line"></i>
@@ -148,36 +145,7 @@
                                         <p>Assendorperdijk 128 8012 EJ Zwolle</p>
                                     </div>
                                 </div>
-                                <div class="contact-item">
-                                    <span class="contact-icon">
-                                        <i class="ri-share-line"></i>
-                                    </span>
-                                    <div class="contact-info">
-                                        <h5>Follow Us</h5>
-                                        <ul class="social-profile list-style style1">
-                                            <li>
-                                                <a target="_blank" href="https://facebook.com/">
-                                                    <i class="flaticon-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://twitter.com/">
-                                                    <i class="flaticon-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://instagram.com/">
-                                                    <i class="flaticon-instagram"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://linkedin.com/">
-                                                    <i class="flaticon-linkedin"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>

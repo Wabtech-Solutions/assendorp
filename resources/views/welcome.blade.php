@@ -101,6 +101,7 @@
                                     <option value="A">Pakket A</option>
                                     <option value="B">Pakket B</option>
                                     <option value="C">Pakket C</option>
+                                    <option value="D">Pakket D</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -137,7 +138,7 @@
                                 </div>
                                 <div class="ceo-message">
                                     <p>"Geduld en persoonlijke ondersteuning is de snelste weg naar een geslaagd examen."</p>
-                                    <h6>Rob, Eigenaar &amp; Instructeur</h6>
+                                    <h6>Rob, eigenaar, gecertificeerd rij instructeur, faalangst instructeur, RIS instructeur.</h6>
                                 </div>
                                 <a href="/over" class="btn style1">Lees meer</a>
                             </div>
@@ -146,6 +147,7 @@
                 </div>
             </section>
 
+            <div id="PakketA"></div>
 
             <section class="course-wrap pt-100 pb-75 bg-concrete">
                 <div class="container">
@@ -159,7 +161,7 @@
                     <div class="course-slider-one owl-carousel">
                         <div class="course-card style2">
                             <div class="course-img">
-                                <img src="assets/img/courses/22.webp" alt="Image">
+                                <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
@@ -169,19 +171,27 @@
                                         examen</li>
                                 </ul>
                                 <h3><a href="course-details.html">Pakket A</a></h3>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                </ul>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
+
                                 <div class="course-author-wrap">
 
                                     <p class="course-price">€ 1992,-</p>
                                 </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="course-card style2">
+                        <div class="course-card style2" id="PakketB">
                             <div class="course-img">
-                                <img src="assets/img/courses/22.webp" alt="Image">
+                                <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
@@ -191,19 +201,27 @@
                                         examen</li>
                                 </ul>
                                 <h3><a href="course-details.html">Pakket B</a></h3>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                </ul>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
+
                                 <div class="course-author-wrap">
 
                                     <p class="course-price">€ 2282,-</p>
                                 </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
                             </div>
                         </div>
-                        <div class="course-card style2">
+                        <div class="course-card style2" id="PakketC">
                             <div class="course-img">
-                                <img src="assets/img/courses/22.webp" alt="Image">
+                                <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
                             <span class="label">Gratis intake</span>
                             <div class="course-info">
@@ -213,14 +231,131 @@
                                         examen</li>
                                 </ul>
                                 <h3><a href="course-details.html">Pakket C</a></h3>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                </ul>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
+
                                 <div class="course-author-wrap">
 
                                     <p class="course-price">€ 2572,-</p>
                                 </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
                                     Meld je aan <i class="flaticon-right-arrow"></i>
                                 </a>
+                            </div>
+                        </div>
+                        <div class="course-card style2"id="PakketD">
+                            <div class="course-img">
+                                <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
+                            </div>
+                            <span class="label">Gratis intake</span>
+                            <div class="course-info">
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>45 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
+                                        examen</li>
+                                </ul>
+                                <h3><a href="course-details.html">Pakket D</a></h3>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                </ul>
+                                <ul class="course-metainfo list-style">
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                </ul>
+                                <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
+
+                                <div class="course-author-wrap">
+
+                                    <p class="course-price">€ 2862,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                                <a class="btn style2" href="#aanmelden">
+                                    Meld je aan <i class="flaticon-right-arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="diversen"></div>
+
+            <section class="course-wrap pt-100 pb-75 bg-concrete" style="margin-top: -51px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                            <div class="section-title style1 text-center mb-40">
+                                <span>Diversen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-slider-one owl-carousel">
+                        <div class="course-card style2" >
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Losse rijles</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 60,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Rijles in pakket</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 58,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Tussentijdse Toets</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 210,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Praktijkexamen</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 252,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Herexamen</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 252,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">BNOR-examen</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 300,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
+                            </div>
+                        </div>
+                        <div class="course-card style2" id="diversen">
+                            <div class="course-info">
+                                <h3><a href="course-details.html">Faalangst examen</a></h3>
+                                <div class="course-author-wrap">
+                                    <p class="course-price">€ 300,-</p>
+                                </div>
+                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                             </div>
                         </div>
                     </div>

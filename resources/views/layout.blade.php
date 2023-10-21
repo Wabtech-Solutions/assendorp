@@ -51,42 +51,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="header-top-right">
-                                <ul class="social-profile list-style style2">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com/">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://linkedin.com/">
-                                            <i class="ri-linkedin-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com/">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://pinterest.com/">
-                                            <i class="ri-pinterest-fill"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="header-bottom">
                     <div class="mobile-bar-wrap">
-                        <div class="mobile-sidebar">
+                        {{-- <div class="mobile-sidebar">
                             <i class="ri-menu-4-line"></i>
-                        </div>
+                        </div> --}}
                         <div class="mobile-menu xl-none">
                             <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
                         </div>
@@ -101,6 +74,7 @@
                             </div>
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
+
                                     <a href="/" class="nav-link active">
                                         Home
                                     </a>
@@ -110,22 +84,16 @@
                                         Over ons
                                     </a>
                                 </li>
-                                <li class="nav-item has-dropdown">
-                                    <a href="#" class="nav-link">
+                                <li class="nav-item">
+                                    <a href="/#PakketA" class="nav-link">
                                         Pakketten
-                                        <i class="ri-arrow-down-s-fill"></i>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="/pakket-a" class="nav-link">Pakket A</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/pakket-b" class="nav-link">Pakket B</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="/pakket-c" class="nav-link">Pakket C</a>
-                                        </li>
-                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/#diversen" class="nav-link">
+                                        Diversen
+                                    </a>
+
                                 </li>
                                 <li class="nav-item">
                                     <a href="/#refereties" class="nav-link">Referenties</a>
@@ -133,7 +101,7 @@
                             </ul>
 
                                 <div class="header-btn">
-                                    <a href="course-one.html" class="btn style1">Contact</a>
+                                    <a href="/contact" class="btn style1">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -166,8 +134,16 @@
                             <a href="index.html" class="footer-logo">
                                 <img src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2018/08/cropped-logo3-1.png" alt="Image">
                             </a>
-
-
+                            <br>
+                            <label class="form-check-label" for="gridCheck">
+                                <a href="/docs/Alg.-voorwaarden-Autorijschool-Assendorp-10-2018.pdf"
+                                    target="_blank" style="color: #D0341D">Algemene voorwaarden</a>
+                            </label>
+<br>
+                            <label class="form-check-label" for="gridCheck">
+                            <a href="/docs/Privacy-verklaring.pdf" target="_blank" style="color: #D0341D">privacy
+                                policy</a>
+                            </label>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
@@ -209,25 +185,26 @@
                     </div>
                     <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
-                            <h3 class="footer-widget-title">Onze Paketten</h3>
+                            <h3 class="footer-widget-title">Werktijden</h3>
                             <ul class="footer-menu list-style">
                                 <li>
-                                    <a href="course-one.html">
-                                        <i class="flaticon-right-arrow-1"></i>
-                                        Pakket A
-                                    </a>
+                                    <p style="color: white; font-size: 13px">Maandag: 09-17</p>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
-                                        <i class="flaticon-right-arrow-1"></i>
-                                        Pakket B
-                                    </a>
+                                    <p style="color: white; font-size: 13px">Dinsdag: 09-17</p>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
-                                        <i class="flaticon-right-arrow-1"></i>
-                                        Pakket C
-                                    </a>
+                                    <p style="color: white; font-size: 13px">Woensdag: 09-17</p>
+                                </li>
+                                <li>
+                                    <p style="color: white; font-size: 13px">Donderdag: 09-17</p>
+                                </li>
+                                <li>
+                                    <p style="color: white; font-size: 13px">Vrijdag: 09-17</p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p style="color: white; font-size: 13px">Zat- Zon- Feestdagen gesloten</p>
                                 </li>
 
                             </ul>
@@ -288,6 +265,8 @@
     <script src="assets/js/tweenmax.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/31ccdf92d3.js" crossorigin="anonymous"></script>
+    <script id="dsq-count-scr" src="//autorijschoolassendorp.disqus.com/count.js" async></script>
+
 </body>
 
 </html>
