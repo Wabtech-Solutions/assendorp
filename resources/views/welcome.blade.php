@@ -61,7 +61,7 @@
                                         <p>Dat is wat al 20 jaar door mensen wordt gezegd. Autorijschool is een betrouwbare
                                             rijschool waar persoonlijke ondersteuning op 1 staat. Bij autorijschool
                                             assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
-                                        <p>✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen</p>
+                                        <p>✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
                                         <a href="/over-ons" class="btn style1">Meer info</a>
                                         <div id="aanmelden"></div>
                                     </div>
@@ -171,7 +171,7 @@
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket A</a></h3>
+                                <h3>Pakket A</a></h3>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
                                 </ul>
@@ -201,7 +201,7 @@
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket B</a></h3>
+                                <h3>Pakket B</a></h3>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
                                 </ul>
@@ -231,7 +231,7 @@
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket C</a></h3>
+                                <h3>Pakket C</a></h3>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
                                 </ul>
@@ -261,7 +261,7 @@
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
-                                <h3><a href="course-details.html">Pakket D</a></h3>
+                                <h3>Pakket D</a></h3>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
                                 </ul>
@@ -298,7 +298,7 @@
                     <div class="course-slider-one owl-carousel">
                         <div class="course-card style2" >
                             <div class="course-info">
-                                <h3><a href="course-details.html">Losse rijles</a></h3>
+                                <h3>Losse rijles</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 60,-</p>
                                 </div>
@@ -307,7 +307,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">Rijles in pakket</a></h3>
+                                <h3>Rijles in pakket</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 58,-</p>
                                 </div>
@@ -316,7 +316,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">Tussentijdse Toets</a></h3>
+                                <h3>Tussentijdse Toets</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 210,-</p>
                                 </div>
@@ -325,7 +325,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">Praktijkexamen</a></h3>
+                                <h3>Praktijkexamen</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 252,-</p>
                                 </div>
@@ -334,7 +334,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">Herexamen</a></h3>
+                                <h3>Herexamen</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 252,-</p>
                                 </div>
@@ -343,7 +343,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">BNOR-examen</a></h3>
+                                <h3>BNOR-examen</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 300,-</p>
                                 </div>
@@ -352,7 +352,7 @@
                         </div>
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
-                                <h3><a href="course-details.html">Faalangst examen</a></h3>
+                                <h3>Faalangst examen</a></h3>
                                 <div class="course-author-wrap">
                                     <p class="course-price">€ 300,-</p>
                                 </div>
