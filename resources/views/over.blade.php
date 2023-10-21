@@ -20,7 +20,8 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/dark-theme.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <title>Rijschool Assendorp - Het adres voor een goede les!</title>
+        <title>Over - Autorijschool Assendorp</title>
+        <meta name="description" content="Over Autorijschool Assendorp ✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
 
@@ -31,7 +32,7 @@
             <div class="overlay op-8 bg-downriver"></div>
             <div class="container">
                 <div class="breadcrumb-title">
-                    <h2>Over Autorijschool Assendorp</h2>
+                    <h1 style="color: white">Over Autorijschool Assendorp</h1>
                     <ul class="breadcrumb-menu list-style">
                         <li><a href="index.html">Home </a></li>
                         <li>Over Ons</li>
@@ -141,6 +142,6 @@
 
     </section>
 
-   
+
     </div>
 @endsection

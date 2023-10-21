@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="assets/css/dark-theme.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <title>Rijschool Assendorp - Het adres voor een goede les!</title>
+        <meta name="description" content="Autorijschool Assendorp, het adres voor een goede les. ✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
 
