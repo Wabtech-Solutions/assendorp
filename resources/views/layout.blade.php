@@ -151,31 +151,31 @@
                             <h3 class="footer-widget-title">Pagina's</h3>
                             <ul class="footer-menu list-style">
                                 <li>
-                                    <a href="course-one.html">
+                                    <a href="">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Goedkope rijles Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
+                                    <a href="course-one.htm">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Rijles Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
+                                    <a href="">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Rijbewijs halen Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
+                                    <a href="">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Goede rijschool Zwolle
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="course-one.html">
+                                    <a href="">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Snel rijbewijs Zwolle
                                     </a>

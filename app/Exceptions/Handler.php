@@ -18,13 +18,26 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
+    function render($request, Throwable $exception)
+    {
+            if ($this->isHttpException($exception)) {
+                if ($exception->getStatusCode() == 404) {
+                    return response()->view('404', [], 404);
+                }
+                if ($exception->getStatusCode() == 500) {
+                    return response()->view('500', [], 500);
+                }
+            }
+            return parent::render($request, $exception);
+         }
+
     /**
      * Register the exception handling callbacks for the application.
      */
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
-            //
+
         });
     }
 }

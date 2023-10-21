@@ -28,6 +28,13 @@ Route::get('/over', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/404', function () {
+    return view('404');
+});
+Route::get('/500', function () {
+    return view('500');
+});
+
 
 
 Route::post('/', [MailController::class,'planRijles'])->name('planRijles');
