@@ -62,7 +62,7 @@
                                             rijschool waar persoonlijke ondersteuning op 1 staat. Bij autorijschool
                                             assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
                                         <p>✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
-                                        <a href="/over-ons" class="btn style1">Meer info</a>
+                                        <a href="/over" class="btn style1">Meer info</a>
                                         <div id="aanmelden"></div>
                                     </div>
                                 </div>
@@ -368,7 +368,7 @@
                 <div class="container">
                     <div class="content-title style1 text-center mb-40">
                         <span>De Lesauto</span>
-                        <h2>Waarmee ga je lessen?</h2>
+                        <h2>Is dit de auto die je naar je rijbewijs brengt?</h2>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-5">
@@ -478,9 +478,29 @@
                 <div class="container">
                     <div class="section-title style1 text-center mb-40">
                         <span>Referenties</span>
-                        <h2>Dit is wat klanten zeggen</h2>
+                        <h2>Dit is wat onze blije en geslaagde kandidaten zeggen</h2>
                     </div>
-                        <div id="disqus_thread"></div>
+                    <div id="disqus_thread"></div>
+                    <script>
+                        /**
+                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                         */
+                        var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        (function() {  // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+
+                            s.src = 'https://autorijschoolassendorp.disqus.com/embed.js';
+
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
                 </div>
             </section>
 
@@ -490,22 +510,4 @@
 
     </html>
 
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://autorijschoolassendorp.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 @endsection

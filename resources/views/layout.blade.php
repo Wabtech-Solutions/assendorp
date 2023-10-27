@@ -183,24 +183,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6"> 
                         <div class="footer-widget">
                             <h3 class="footer-widget-title">Werktijden</h3>
                             <ul class="footer-menu list-style">
                                 <li>
-                                    <p style="color: white; font-size: 13px">Maandag: 09-17</p>
+                                    <p style="color: white; font-size: 13px">Maandag: 09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Dinsdag: 09-17</p>
+                                    <p style="color: white; font-size: 13px">Dinsdag: 09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Woensdag: 09-17</p>
+                                    <p style="color: white; font-size: 13px">Woensdag: 09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Donderdag: 09-17</p>
+                                    <p style="color: white; font-size: 13px">Donderdag: 09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Vrijdag: 09-17</p>
+                                    <p style="color: white; font-size: 13px">Vrijdag: 09:00 - 17:00</p>
                                 </li>
                                 <br>
                                 <li>
