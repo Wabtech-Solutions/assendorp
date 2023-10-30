@@ -40,7 +40,7 @@
                                 <ul class="contact-info list-style">
                                     <li><i class="flaticon-call"></i> <a href="tel:+31642255956">(+31) 6 42 25 59 56</a>
                                     </li>
-                                    <li><i class="flaticon-envelope"></i> <a
+                                    <li><i  class="flaticon-envelope"></i> <a
                                             href="mailto:info@autorijschoolassendorp.nl"><span
                                                 class="__cf_email__"
                                                 data-cfemail="82eae7eeeeedc2e6ebf8f7ace1edef">info@autorijschoolassendorp.nl</span></a>
@@ -136,7 +136,7 @@
                             </a>
                             <br>
                             <label class="form-check-label" for="gridCheck">
-                                <a href="/docs/Alg.-voorwaarden-Autorijschool-Assendorp-10-2018.pdf"
+                                <a href="/docs/Alg.-voor\den-Autorijschool-Assendorp-10-2018.pdf"
                                     target="_blank" style="color: #D0341D">Algemene voorwaarden</a>
                             </label>
 <br>
@@ -183,31 +183,52 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6"> 
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
                             <h3 class="footer-widget-title">Werktijden</h3>
                             <ul class="footer-menu list-style">
+                                <div class="parent-container">
+                                <div class="container22">
+                                    <li>
+                                      <p style="color: white; font-size: 13px">Maandag:</p>
+                                    </li>
+                                    <li>
+                                      <p style="color: white; font-size: 13px">Dinsdag:</p>
+                                    </li>
+                                    <li>
+                                      <p style="color: white; font-size: 13px">Woensdag:</p>
+                                    </li>
+                                    <li>
+                                      <p style="color: white; font-size: 13px">Donderdag:</p>
+                                    </li>
+                                    <li>
+                                      <p style="color: white; font-size: 13px">Vrijdag:</p>
+                                    </li>
+                                  </div>
+                                  <div class="container22">
                                 <li>
-                                    <p style="color: white; font-size: 13px">Maandag: 09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Dinsdag: 09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Woensdag: 09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Donderdag: 09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Vrijdag: 09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
+                            </div>
+                        </div>
                                 <br>
                                 <li>
                                     <p style="color: white; font-size: 13px">Zat- Zon- Feestdagen gesloten</p>
                                 </li>
-
                             </ul>
+
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">

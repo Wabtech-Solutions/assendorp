@@ -368,7 +368,7 @@
                 <div class="container">
                     <div class="content-title style1 text-center mb-40">
                         <span>De Lesauto</span>
-                        <h2>Is dit de auto die je naar je rijbewijs brengt?</h2>
+                        <h2>Is dit de lesauto die jou naar het veelbegeerde rijbewijs brengt?</h2>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-5">

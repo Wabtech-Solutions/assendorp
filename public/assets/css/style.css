@@ -924,7 +924,7 @@ select {
   display: inline-block;
   position: relative;
   top: 2px;
-  color: #666666;
+  color: #ffffff;
   margin: 0 auto;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -936,7 +936,7 @@ select {
 }
 
 .owl-carousel .owl-nav button.owl-prev:hover i, .owl-carousel .owl-nav button.owl-next:hover i {
-  color: #fff;
+  color: #D0341D;
 }
 
 .owl-carousel .owl-dots button.owl-dot {
@@ -4405,17 +4405,27 @@ select {
 
 .course-slider-one.owl-carousel .owl-nav button.owl-prev, .course-slider-one.owl-carousel .owl-nav button.owl-next {
   border: none;
-  background-color: #fff;
+  background-color: #D0341D;
 }
 
 .course-slider-one.owl-carousel .owl-nav button.owl-prev:hover, .course-slider-one.owl-carousel .owl-nav button.owl-next:hover {
-  background-color: #D0341D;
+  background-color: #201C19;
 }
 
 .course-slider-one .course-card.style2 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.parent-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container22 {
+    margin-right: 10px; /* Add some spacing between the divs */
+    min-width: 80px;
+  }
 
 /*-------------------------------
    Why Choose  Section  CSS
