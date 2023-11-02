@@ -85,23 +85,7 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <div class="form-check checkbox style2">
-                                                    <input name="gridCheck" value="I agree to the terms and privacy policy."
-                                                        class="form-check-input" type="checkbox" id="gridCheck" required />
-                                                    <label class="form-check-label" for="gridCheck">
-                                                        Ik aanvaard de
-                                                        <a href="/docs/Alg.-voorwaarden-Autorijschool-Assendorp-10-2018.pdf"
-                                                            target="_blank">Algemene voorwaarden</a>
-                                                        en
-                                                        <a href="/docs/Privacy-verklaring.pdf" target="_blank">privacy
-                                                            policy</a>.
-                                                    </label>
-                                                    <div class="help-block with-errors gridCheck-error"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="col-md-12">
                                             <button type="submit" class="btn style1 w-100 d-block">
                                                 Verstuur bericht

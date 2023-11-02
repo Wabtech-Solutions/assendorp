@@ -43,7 +43,7 @@ class MailController extends Controller
                 'name' => 'required',
                 'email' => 'required',
                 'msg_subject' => 'required',
-                'message' => 'required'
+                'bericht' => 'required'
 
         ]);
 
@@ -58,6 +58,20 @@ class MailController extends Controller
                 $message->from('contact@wabtech-solutions.nl');
                 $message->to('contact@wabtech-solutions.nl', 'Willem')
                     ->subject('Een nieuw bericht voor Autorijschool Assendorp');
+            }
+        );
+
+        Mail::send(
+            'mail.contactUser',[
+                'name' => $request->get('name'),
+                'email' => $request->get('email'),
+                'msg_subject' => $request->get('msg_subject'),
+                'bericht' => $request->get('bericht'),
+            ],
+            function ($message) use ($request) {
+                $message->from('contact@wabtech-solutions.nl');
+                $message->to($request->get('email'), 'Willem')
+                    ->subject('Autorijschool Assendorp - Bedankt voor je bericht!');
             }
         );
 

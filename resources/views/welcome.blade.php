@@ -59,8 +59,8 @@
                                     <div class="hero-content" data-speed="0.10" data-revert="true">
                                         <h1>Het adres voor een goede les!</h1>
                                         <p>Dat is wat al 20 jaar door mensen wordt gezegd. Autorijschool Assendorp is een betrouwbare
-                                            rijschool waar persoonlijke ondersteuning op 1 staat. Bij autorijschool
-                                            assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
+                                            rijschool waar persoonlijke ondersteuning op 1 staat. Bij Autorijschool
+                                            Assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
                                         <p>✓ Personlijke begeleiding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
                                         <a href="/over" class="btn style1">Meer info</a>
                                         <div id="aanmelden"></div>

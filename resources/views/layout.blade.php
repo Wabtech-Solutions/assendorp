@@ -66,7 +66,7 @@
                     </div>
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="/">
-                            <img style="width: 140px" src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2018/08/cropped-logo3-1.png" alt="logo">
+                            <img style="width: 140px" src="/assets/img/ARA/logo.webp" alt="Autorijschool Assendorp">
                         </a>
                         <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
                             <div class="menu-close xl-none">
@@ -131,8 +131,8 @@
                 <div class="row pb-75">
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                         <div class="footer-widget">
-                            <a href="index.html" class="footer-logo">
-                                <img src="https://www.autorijschoolassendorp.nl/wp-content/uploads/2018/08/cropped-logo3-1.png" alt="Image">
+                            <a href="/" class="footer-logo">
+                                <img src="/assets/img/ARA/logo.webp" alt="Autorijschool Assendorp">
                             </a>
                             <br>
                             <label class="form-check-label" for="gridCheck">
