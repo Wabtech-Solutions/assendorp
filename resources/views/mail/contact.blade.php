@@ -5,7 +5,7 @@
 <p>Contactgegevens:</p>
 <p> Naam: {{ $name }} </p>
 <p> Telefoon: {{ $email }} </p>
-><br>
+<br>
 <p> Onderwerp: {{ $msg_subject }} </p>
 <p> Bericht: {{ $bericht }} </p>
 

@@ -26,8 +26,8 @@ class MailController extends Controller
                 'pakket' => $request->get('pakket'),
             ],
             function ($message) use ($request) {
-                $message->from('contact@wabtech-solutions.nl');
-                $message->to('contact@wabtech-solutions.nl', 'Willem')
+                $message->from('info@autorijschoolassendorp.nl');
+                $message->to('info@autorijschoolassendorp.nl', 'Rob')
                     ->subject('Een nieuwe aanmelding voor Autorijschool Assendorp');
             }
         );
@@ -55,8 +55,8 @@ class MailController extends Controller
                 'bericht' => $request->get('bericht'),
             ],
             function ($message) use ($request) {
-                $message->from('contact@wabtech-solutions.nl');
-                $message->to('contact@wabtech-solutions.nl', 'Willem')
+                $message->from('info@autorijschoolassendorp.nl');
+                $message->to('info@autorijschoolassendorp.nl', 'Rob')
                     ->subject('Een nieuw bericht voor Autorijschool Assendorp');
             }
         );
@@ -69,8 +69,8 @@ class MailController extends Controller
                 'bericht' => $request->get('bericht'),
             ],
             function ($message) use ($request) {
-                $message->from('contact@wabtech-solutions.nl');
-                $message->to($request->get('email'), 'Willem')
+                $message->from('info@autorijschoolassendorp.nl');
+                $message->to($request->get('email'), 'Rob')
                     ->subject('Autorijschool Assendorp - Bedankt voor je bericht!');
             }
         );
