@@ -91,7 +91,7 @@
                                                     <input name="gridCheck" value="I agree to the terms and privacy policy."
                                                         class="form-check-input" type="checkbox" id="gridCheck" required />
                                                     <label class="form-check-label" for="gridCheck">
-                                                        Ik accepteer de
+                                                        Ik aanvaard de
                                                         <a href="/docs/Alg.-voorwaarden-Autorijschool-Assendorp-10-2018.pdf"
                                                             target="_blank">Algemene voorwaarden</a>
                                                         en
@@ -136,7 +136,7 @@
                                         <h5>Email</h5>
                                         <a href="mailto:info@autorijschoolassendorp.nl">info@autorijschoolassendorp.nl</a>
                                 </div>
-                                <hr>
+                                </div>
                                 <div class="contact-item">
                                     <span class="contact-icon">
                                         <i class="ri-map-pin-line"></i>

@@ -213,7 +213,7 @@
                                     <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 13:00</p>
                                 </li>
                                 <li>
                                     <p style="color: white; font-size: 13px">09:00 - 17:00</p>
