@@ -9,6 +9,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_KEY') }}"></script>
 
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -85,7 +86,7 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-12">
                                             <button type="submit" class="btn style1 w-100 d-block">
                                                 Verstuur bericht
@@ -137,4 +138,17 @@
                 </div>
             </section>
         </div>
+
+        <script type="text/javascript">
+            $('#contactUSForm').submit(function(event) {
+                event.preventDefault();
+
+                grecaptcha.ready(function() {
+                    grecaptcha.execute("{{ env('GOOGLE_RECAPTCHA_KEY') }}", {action: 'subscribe_newsletter'}).then(function(token) {
+                        $('#contactUSForm').prepend('<input type="hidden" name="token" value="' + token + '">');
+                        $('#contactUSForm').unbind('submit').submit();
+                    });;
+                });
+            });
+        </script>
     @endsection

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
 
+use App\Rules\ReCaptcha;
+
 class MailController extends Controller
 {
     public function planRijles(Request $request)
@@ -69,8 +71,8 @@ class MailController extends Controller
                 'bericht' => $request->get('bericht'),
             ],
             function ($message) use ($request) {
-                $message->from('info@autorijschoolassendorp.nl');
-                $message->to($request->get('email'), 'Rob')
+                $message->from('info@autorijschoolassendorp.nl', 'Autorijschool Assendorp');
+                $message->to($request->get('email'), $request->get('name'))
                     ->subject('Autorijschool Assendorp - Bedankt voor je bericht!');
             }
         );

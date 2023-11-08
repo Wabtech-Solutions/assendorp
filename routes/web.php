@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,9 @@ Route::get('/', function () {
 Route::get('/over', function () {
     return view('over');
 });
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 Route::get('/404', function () {
     return view('404');
 });
@@ -35,6 +36,8 @@ Route::get('/500', function () {
     return view('500');
 });
 
+Route::get('/contact', [ContactController::class, 'index']);
+// Route::post('/contact', [ContactController::class, 'store'])->name('contact');
 
 
 Route::post('/', [MailController::class,'planRijles'])->name('planRijles');
