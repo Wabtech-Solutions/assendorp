@@ -98,7 +98,7 @@
                                 <label for="course-plan">Kies een pakket</label>
 
                                 <select name="pakket" required id="course-plan">
-                                    <option value="0">Ik weet het nog niet</option>
+                                    <option value="0">Ik weet het niet</option>
                                     <option value="A">Pakket A</option>
                                     <option value="B">Pakket B</option>
                                     <option value="C">Pakket C</option>
