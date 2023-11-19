@@ -151,7 +151,7 @@
                             <h3 class="footer-widget-title">Pagina's</h3>
                             <ul class="footer-menu list-style">
                                 <li>
-                                    <a href="">
+                                    <a href="/goedkope-rijles-zwolle">
                                         <i class="flaticon-right-arrow-1"></i>
                                         Goedkope rijles Zwolle
                                     </a>

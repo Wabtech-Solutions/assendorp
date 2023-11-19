@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="assets/css/dark-theme.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <title>Rijschool Assendorp - Het adres voor een goede les!</title>
-        <meta name="description" content="Autorijschool Assendorp, het adres voor een goede les. ✓ Personlijke begelijding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen">
+        <meta name="description" content="Autorijschool Assendorp, het adres voor een goede les. ✓ Personlijke begelijding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓ Betaal in termijnen">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
 
@@ -61,7 +61,7 @@
                                         <p>Dat is wat al 20 jaar door mensen wordt gezegd. Autorijschool Assendorp is een betrouwbare
                                             rijschool waar persoonlijke ondersteuning op 1 staat. Bij Autorijschool
                                             Assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
-                                        <p>✓ Personlijke begeleiding ✓ Gratis intake ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
+                                        <p>✓ Personlijke begeleiding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
                                         <a href="/over" class="btn style1">Meer info</a>
                                         <div id="aanmelden"></div>
                                     </div>
@@ -164,7 +164,7 @@
                             <div class="course-img">
                                 <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
-                            <span class="label">Gratis intake</span>
+                            <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
@@ -173,7 +173,7 @@
                                 </ul>
                                 <h3>Pakket A</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
@@ -194,7 +194,7 @@
                             <div class="course-img">
                                 <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
-                            <span class="label">Gratis intake</span>
+                            <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
@@ -203,7 +203,7 @@
                                 </ul>
                                 <h3>Pakket B</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
@@ -224,7 +224,7 @@
                             <div class="course-img">
                                 <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
-                            <span class="label">Gratis intake</span>
+                            <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
@@ -233,7 +233,7 @@
                                 </ul>
                                 <h3>Pakket C</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
@@ -254,7 +254,7 @@
                             <div class="course-img">
                                 <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
                             </div>
-                            <span class="label">Gratis intake</span>
+                            <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>45 Lessen</li>
@@ -263,7 +263,7 @@
                                 </ul>
                                 <h3>Pakket D</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Betaal in termijnen zonder kosten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
                                     <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
@@ -368,7 +368,7 @@
                 <div class="container">
                     <div class="content-title style1 text-center mb-40">
                         <span>De Lesauto</span>
-                        <h2>Is dit de lesauto die jou naar het veelbegeerde rijbewijs brengt?</h2>
+                        <h2>Is dit de lesauto die jou naar het felbegeerde rijbewijs brengt?</h2>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-5">

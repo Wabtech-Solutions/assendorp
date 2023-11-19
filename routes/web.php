@@ -26,6 +26,11 @@ Route::get('/', function () {
 Route::get('/over', function () {
     return view('over');
 });
+
+
+Route::get('/goedkope-rijles-zwolle', function () {
+    return view('GRZ');
+});
 // Route::get('/contact', function () {
 //     return view('contact');
 // });

@@ -7,7 +7,7 @@
 
     <!-- Mirrored from templates.hibootstrap.com/dizu/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Sep 2023 13:19:36 GMT -->
 
-		
+
     <head>
 
         <meta charset="utf-8">
@@ -33,10 +33,10 @@
                   function ValidCaptcha(){
                       var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
                       var string2 = removeSpaces(document.getElementById('txtInput').value);
-                      if (string1 == string2){ document.getElementById("valid").value = "1234567"; return true; } else{ alert("De captcha was helaas fout ingevuld"); location.reload(); document.contactForm.action = "/"; window.location.replace("/contact"); 
+                      if (string1 == string2){ document.getElementById("valid").value = "1234567"; return true; } else{ alert("De captcha was helaas fout ingevuld"); location.reload(); document.contactForm.action = "/"; window.location.replace("/contact");
  return false; } } function removeSpaces(string){ return string.split(' ').join(''); }
-             </script>  
-		
+             </script>
+
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/flaticon.css">
         <link rel="stylesheet" href="assets/css/remixicon.css">
@@ -112,31 +112,30 @@
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-										
-					
-<table>
-          <tr>
-           <td>
-                 Bevestig dat u geen robot bent:<br />
-			   
-           </td>
-          </tr>
-          <tr>
-           <td>
-             <input type="text" id="mainCaptcha" readonly onmousedown="return false" onselectstart="return false"/>
-              <input type="button" id="refresh" value="Niewe code" onclick="Captcha();" />
-           </td>
-          </tr>
-          <tr>
-           <td>
-			   <p font-size="8">Typ de tekst over zonder spaties</p>
-            <input type="text" id="txtInput"/>    
-          </td>
-         </tr>
-         <tr>
-        </tr>
-      </table>
-										
+
+
+                                        <table style="text-align: center;">
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  Bevestig dat u geen robot bent:<br>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <input type="text" id="mainCaptcha" readonly="" onmousedown="return false" onselectstart="return false">
+                                                  <input type="button" id="refresh" value="Niewe code" onclick="Captcha();">
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p style="font-size: 10px;">Typ de tekst over zonder spaties</p>
+                                                  <input type="text" id="txtInput">
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+
                                         <div class="col-md-12">
                                             <div class="form-group v1">
                                                 <input name="valid" id="valid" type="text" value="12" cols="1" rows="1" required hidden>

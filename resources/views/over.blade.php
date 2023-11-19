@@ -71,6 +71,8 @@
                                     betalen wij de overgebleven lessen aan jou terug. Voor alle pakketten geldt dat de
                                     prijzen exclusief Verklaring Rijgeschiktheid zijn vermeld. Deze dien je zelf in te
                                     dienen via mijn.cbr.nl, en tegelijkertijd de kosten hiervoor te voldoen aan het cbr.
+                                    <br>
+                                    Wij bieden lessen van 60 minuten, gehaald en gebracht binnen Zwolle waar dat jij wilt.
                                 </p>
                             </div>
 

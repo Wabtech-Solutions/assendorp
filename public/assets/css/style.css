@@ -3758,11 +3758,19 @@ select {
   animation-delay: 1.1s;
 }
 
+#mainCaptcha{
+    background-color: rgb(90, 16, 16);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    text-align: center;
+}
+
 /*-------------------------------
     About  Section CSS
 -------------------------------*/
 .about-bg-1 {
-  background-image: url(https://www.autorijschoolassendorp.nl/wp-content/uploads/2020/11/auto-768x576.jpg);
+  background-image: url(/assets/img/ARA/home1.webp);
 }
 
 .about-bg-2 {
@@ -3910,6 +3918,14 @@ select {
   padding: 40px 30px;
   border-radius: 1px 5px 5px 5px;
 }
+
+.parent-container {
+    display: flex;
+  }
+
+  .container22 {
+    /* Add any additional styling for the containers */
+  }
 
 .about-wrap.style2 .about-img-wrap .about-promo-box::before {
   position: absolute;
