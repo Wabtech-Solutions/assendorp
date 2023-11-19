@@ -45,11 +45,19 @@ class MailController extends Controller
                 'name' => 'required',
                 'email' => 'required',
                 'msg_subject' => 'required',
-                'bericht' => 'required'
+                'bericht' => 'required',
+			'valid' => 'required'
 
         ]);
 
-        Mail::send(
+		 if (strlen($request->valid) < 6) {
+		
+
+        return back()->with('success', 'De captcha is helaas niet goed ingevuld, probeer het opnieuw.' );
+			 
+		 }
+		
+		        Mail::send(
             'mail.contact',[
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),

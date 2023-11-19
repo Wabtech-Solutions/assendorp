@@ -269,7 +269,7 @@
             </div>
         </footer>
 
-    </div>
+
 
 
     <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>

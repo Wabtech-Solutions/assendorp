@@ -30,18 +30,18 @@ class ContactController extends Controller
             'email' => 'required',
             'msg_subject' => 'required',
             'bericht' => 'required',
-            'g-recaptcha-response' => ['required', new ReCaptcha]
+            'valid' => 'required|min:6'
+
         ]);
 
+		    if (strlen($request->valid) < 6) {
+        return back()->with('success', 'FOUT '.$request->get('name') .', we nemen op '.$request->get('date') .' contact met je op.' );
+    } else{
+
+		
         $input = $request->all();
 
-        /*------------------------------------------
-        --------------------------------------------
-        Write Code for Store into Database
-        --------------------------------------------
-        --------------------------------------------*/
-        dd($input);
-
         return back()->with('success', 'Bedankt '.$request->get('name') .', we nemen op '.$request->get('date') .' contact met je op.' );
+			}
     }
 }
