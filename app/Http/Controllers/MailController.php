@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
+use Illuminate\Support\Facades\Http;
+
 
 use App\Rules\ReCaptcha;
 
@@ -40,23 +42,27 @@ class MailController extends Controller
 
     public function contact(Request $request)
     {
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('GOOGLE_RECAPTCHA_SECRET'),
+            'response' => $request->input('g-recaptcha-response'),
+            'remoteip' => $request->ip(),
+        ]);
+
+        $captchaValidation = $response->json();
+
+        if (!$captchaValidation['success']) {
+            return back()->withErrors(['captcha' => 'reCAPTCHA-fout. Probeer het opnieuw.'])->withInput();
+        }
+
         $this->validate($request, [
 
                 'name' => 'required',
                 'email' => 'required',
                 'msg_subject' => 'required',
                 'bericht' => 'required',
-			'valid' => 'required'
 
         ]);
 
-		 if (strlen($request->valid) < 6) {
-		
-
-        return back()->with('success', 'De captcha is helaas niet goed ingevuld, probeer het opnieuw.' );
-			 
-		 }
-		
 		        Mail::send(
             'mail.contact',[
                 'name' => $request->get('name'),

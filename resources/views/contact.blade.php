@@ -9,34 +9,9 @@
 
 
     <head>
-
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_KEY') }}"></script>
-
-		             <script type="text/javascript">
-                 function Captcha(){
-                     var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
-                     var i;
-                     for (i=0;i<6;i++){
-                       var a = alpha[Math.floor(Math.random() * alpha.length)];
-                       var b = alpha[Math.floor(Math.random() * alpha.length)];
-                       var c = alpha[Math.floor(Math.random() * alpha.length)];
-                       var d = alpha[Math.floor(Math.random() * alpha.length)];
-                       var e = alpha[Math.floor(Math.random() * alpha.length)];
-                       var f = alpha[Math.floor(Math.random() * alpha.length)];
-                       var g = alpha[Math.floor(Math.random() * alpha.length)];
-                      }
-                    var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
-                    document.getElementById("mainCaptcha").value = code
-                  }
-                  function ValidCaptcha(){
-                      var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
-                      var string2 = removeSpaces(document.getElementById('txtInput').value);
-                      if (string1 == string2){ document.getElementById("valid").value = "1234567"; return true; } else{ alert("De captcha was helaas fout ingevuld"); location.reload(); document.contactForm.action = "/"; window.location.replace("/contact");
- return false; } } function removeSpaces(string){ return string.split(' ').join(''); }
-             </script>
-
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/flaticon.css">
         <link rel="stylesheet" href="assets/css/remixicon.css">
@@ -81,79 +56,69 @@
                                         {{ session('success') }}
                                     </div>
                                 @endif
-                                <form method="POST" action="/contact" class="form-wrap" id="contactForm" name="contactForm" onsubmit="ValidCaptcha();">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" name="name" placeholder="Naam" id="name"
-                                                    required data-error="Dit veld is verplicht" />
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="email" name="email" id="email" required
-                                                    placeholder="Email" data-error="Dit veld is verplicht" />
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="text" name="msg_subject" placeholder="Onderwerp"
-                                                    id="msg_subject" required data-error="Dit veld is verplicht" />
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group v1">
-                                                <textarea name="bericht" id="message" placeholder="Bericht" cols="30" rows="10" required
-                                                    data-error="Dit veld is verplicht"></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-
-
-                                        <table style="text-align: center;">
-                                            <tbody>
-                                              <tr>
-                                                <td>
-                                                  Bevestig dat u geen robot bent:<br>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <input type="text" id="mainCaptcha" readonly="" onmousedown="return false" onselectstart="return false">
-                                                  <input type="button" id="refresh" value="Niewe code" onclick="Captcha();">
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                  <p style="font-size: 10px;">Typ de tekst over zonder spaties</p>
-                                                  <input type="text" id="txtInput">
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-
-                                        <div class="col-md-12">
-                                            <div class="form-group v1">
-                                                <input name="valid" id="valid" type="text" value="12" cols="1" rows="1" required hidden>
-                                                <div class="help-block with-errors">
-                                            </div>
-                                        </div>
-										</div>
-
-
-                                        <div class="col-md-12">
-                                            <button type="submit" class="btn style1 w-100 d-block">
-                                                Verstuur bericht
-                                            </button>
-
-                                            <div class="clearfix"></div>
+                                @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    Oeps! Er is iets mis gegaan.
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form method="POST" action="/contact" class="form-wrap" id="contactForm" name="contactForm">
+                                @csrf
+                                <div class="row">
+                                    <!-- Naam veld -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Naam" id="name"
+                                                   value="{{ old('name') }}" required data-error="Dit veld is verplicht" />
+                                            <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                </form>
+                                    <!-- Email veld -->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" required
+                                                   placeholder="Email" value="{{ old('email') }}" data-error="Dit veld is verplicht" />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Onderwerp veld -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="msg_subject" placeholder="Onderwerp"
+                                                   id="msg_subject" value="{{ old('msg_subject') }}" required data-error="Dit veld is verplicht" />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Bericht veld -->
+                                    <div class="col-md-12">
+                                        <div class="form-group v1">
+                                            <textarea name="bericht" id="message" placeholder="Bericht" cols="30" rows="10" required
+                                                      data-error="Dit veld is verplicht">{{ old('bericht') }}</textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!-- reCAPTCHA -->
+                                    <div class="col-md-12">
+                                        <div class="form-group v1">
+                                            <div class="g-recaptcha" data-sitekey="6Ld8WzMqAAAAAIu-UVbrDOHBQE2LLyccFrnNI65X"></div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Verstuur knop -->
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn style1 w-100 d-block">
+                                            Verstuur bericht
+                                        </button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+
+
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-5">
@@ -197,16 +162,4 @@
             </section>
         </div>
 
-        <script type="text/javascript">
-            $('#contactUSForm').submit(function(event) {
-                event.preventDefault();
-
-                grecaptcha.ready(function() {
-                    grecaptcha.execute("{{ env('GOOGLE_RECAPTCHA_KEY') }}", {action: 'subscribe_newsletter'}).then(function(token) {
-                        $('#contactForm').prepend('<input type="hidden" name="token" value="' + token + '">');
-                        $('#contactForm').unbind('submit').submit();
-                    });;
-                });
-            });
-        </script>
     @endsection
