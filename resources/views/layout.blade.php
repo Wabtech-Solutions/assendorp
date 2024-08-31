@@ -136,7 +136,7 @@
                             </a>
                             <br>
                             <label class="form-check-label" for="gridCheck">
-                                <a href="/docs/Alg.-voor\den-Autorijschool-Assendorp-10-2018.pdf"
+                                <a href="/docs/Alg.-voorwaarden-Autorijschool-Assendorp-10-2018.pdf"
                                     target="_blank" style="color: #D0341D">Algemene voorwaarden</a>
                             </label>
 <br>
@@ -207,19 +207,19 @@
                                   </div>
                                   <div class="container22">
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
                                 </li>
                                 <li>
                                     <p style="color: white; font-size: 13px">09:00 - 13:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
                                 </li>
                             </div>
                         </div>
