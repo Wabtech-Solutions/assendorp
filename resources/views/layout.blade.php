@@ -3,7 +3,71 @@
 
 <!-- Mirrored from templates.hibootstrap.com/dizu/default/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Sep 2023 13:19:36 GMT -->
 
+<style>/* Styles for the action banner */
+    .book-course-form .actie-banner {
+        background-color: #f8f9fa;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
+    .book-course-form .actie-banner h3 {
+        color: #007bff;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .book-course-form .actie-banner p {
+        color: #495057;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* Styles for the form heading */
+    .book-course-form h4 {
+        color: #343a40;
+        font-size: 1.25rem;
+        margin-bottom: 10px!important;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #007bff;
+        display: inline-block;
+
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .book-course-form .actie-banner h3 {
+            font-size: 1.25rem;
+        }
+
+        .book-course-form .actie-banner p {
+            font-size: 0.9rem;
+        }
+
+        .book-course-form h4 {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .book-course-form .actie-banner {
+            padding: 10px;
+        }
+
+        .book-course-form .actie-banner h3 {
+            font-size: 1.1rem;
+        }
+
+        .book-course-form .actie-banner p {
+            font-size: 0.8rem;
+        }
+
+        .book-course-form h4 {
+            font-size: 1rem;
+        }
+    }</style>
 
 <body>
 
@@ -207,19 +271,19 @@
                                   </div>
                                   <div class="container22">
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
+                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
+                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 13:00</p>
+                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
+                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">09:00 - 16:00</p>
+                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
                                 </li>
                             </div>
                         </div>

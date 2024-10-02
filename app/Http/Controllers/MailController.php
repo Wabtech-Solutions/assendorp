@@ -13,17 +13,28 @@ class MailController extends Controller
 {
     public function planRijles(Request $request)
     {
+        // Stap 1: Valideer de basisgegevens
         $this->validate($request, [
-
-                'telefoon' => 'required',
-                'name' => 'required',
-                'date' => 'required',
-                'pakket' => 'required'
-
+            'telefoon' => 'required',
+            'name' => 'required',
+            'date' => 'required',
+            'pakket' => 'required',
+            'g-recaptcha-response' => 'required', // Controleer of de reCAPTCHA is ingevuld
         ]);
 
+        // Stap 2: Valideer reCAPTCHA
+        $recaptchaResponse = $request->input('g-recaptcha-response');
+        $secretKey = '6Lfi71UqAAAAAMVpI0XnSBTY_LbU00LO9BCjL1fT';
+        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}");
+        $responseKeys = json_decode($response, true);
+
+        if(!$responseKeys["success"] || $responseKeys["score"] < 0.5) {
+            return back()->withErrors(['recaptcha' => 'Recaptcha validatie mislukt, probeer opnieuw.']);
+        }
+
+        // Stap 3: Verstuur de email na succesvolle validatie
         Mail::send(
-            'mail.analyseMail',[
+            'mail.analyseMail', [
                 'name' => $request->get('name'),
                 'telefoon' => $request->get('telefoon'),
                 'date' => $request->get('date'),
@@ -36,8 +47,9 @@ class MailController extends Controller
             }
         );
 
-        return back()->with('success', 'Bedankt '.$request->get('name') .', we nemen op '.$request->get('date') .' contact met je op.' );
+        return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $request->get('date') . ' contact met je op.');
     }
+
 
 
     public function contact(Request $request)

@@ -76,43 +76,66 @@
             <div class="book-course-wrap style1">
                 <div class="container">
                     <div class="book-course-form">
-                        @if (session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
+                        <!-- Gratis intake actie banner -->
+                        <div class="actie-banner">
+                            <h3>Speciale Actie: Gratis Intake Gesprek!</h3>
+                            <p>Plan nu een intakegesprek en profiteer van deze tijdelijke aanbieding.</p>
                         </div>
-                    @endif
                         <h4 style="margin-bottom: 1px">Begin met lessen</h4>
 
-                        <form method="POST" action="/" class="booking-form">
-                            @csrf
-                            <div class="form-group">
-                                <label for="name">Volledige Naam*</label>
-                                <input name="name" required type="text" id="name" placeholder="Naam" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="telefoon">Telefoon*</label>
-                                <input name="telefoon" required type="number" id="telefoon" placeholder="0612345678" required>
-                            </div>
+                        <!-- Voeg deze script tag toe aan de <head> van je pagina -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-"></script>
 
-                            <div class="form-group">
-                                <label for="course-plan">Kies een pakket</label>
+<!-- Je bestaande formulier -->
+<form method="POST" action="/" class="booking-form" id="booking-form">
+    <input type="hidden" name="_token" value="8XqmCZWtaUVu4oeZpktFQb0Rfpehn5VRN8zrhcFB" autocomplete="off">
 
-                                <select name="pakket" required id="course-plan">
-                                    <option value="0">Ik weet het niet</option>
-                                    <option value="A">Pakket A</option>
-                                    <option value="B">Pakket B</option>
-                                    <option value="C">Pakket C</option>
-                                    <option value="D">Pakket D</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="date">Datum voor intake (telefonisch)</label>
-                                <input name="date" required type="date" id="date" required>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn style1 w-100 d-block">Plan intake</button>
-                            </div>
-                        </form>
+    <div class="form-group">
+        <label for="name">Volledige Naam*</label>
+        <input name="name" required="" type="text" id="name" placeholder="Naam" control-id="ControlID-1">
+    </div>
+
+    <div class="form-group">
+        <label for="telefoon">Telefoon*</label>
+        <input name="telefoon" required="" type="number" id="telefoon" placeholder="0612345678" control-id="ControlID-2">
+    </div>
+
+    <div class="form-group">
+        <label for="course-plan">Kies een pakket</label>
+        <select name="pakket" required="" id="course-plan" control-id="ControlID-7">
+            <option value="0">Ik weet het niet</option>
+            <option value="A">Pakket A</option>
+            <option value="B">Pakket B</option>
+            <option value="C">Pakket C</option>
+            <option value="D">Pakket D</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="date">Gebeld worden op</label>
+        <input name="date" required="" type="date" id="date" control-id="ControlID-4">
+    </div>
+
+    <!-- reCAPTCHA v3 hidden input -->
+    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+    <div class="form-group">
+        <button type="submit" class="btn style1 w-100 d-block" control-id="ControlID-5">Plan Het Gesprek</button>
+    </div>
+</form>
+
+<script>
+    grecaptcha.ready(function() {
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Voorkom standaard formulier inzending
+
+            grecaptcha.execute('6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-', {action: 'submit'}).then(function(token) {
+                document.getElementById('g-recaptcha-response').value = token;
+                document.getElementById('booking-form').submit(); // Verstuur het formulier als token is gegenereerd
+            });
+        });
+    });
+</script>
                     </div>
                 </div>
             </div>
