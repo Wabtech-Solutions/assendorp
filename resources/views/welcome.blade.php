@@ -100,54 +100,47 @@
                             <p>Plan nu een intakegesprek en profiteer van deze tijdelijke aanbieding.</p>
                         </div>
                         <h4 style="margin-bottom: 1px">Begin met lessen</h4>
+                        <script src="https://www.google.com/recaptcha/api.js?render=6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-"></script>
+
 
 
                         <form method="POST" action="/" class="booking-form" id="booking-form">
                             @csrf
-                            <input type="hidden" name="recaptcha_token" id="recaptcha-token">
-
                             <div class="form-group">
-                                <label for="name">Volledige Naam*</label>
-                                <input name="name" required type="text" id="name" placeholder="Naam">
+                              <label for="name">Volledige Naam*</label>
+                              <input name="name" required type="text" id="name" placeholder="Naam">
                             </div>
-
                             <div class="form-group">
-                                <label for="telefoon">Telefoon*</label>
-                                <input name="telefoon" required type="tel" id="telefoon" placeholder="0612345678">
+                              <label for="telefoon">Telefoon*</label>
+                              <input name="telefoon" required type="tel" id="telefoon" placeholder="0612345678">
                             </div>
-
                             <div class="form-group">
-                                <label for="course-plan">Kies een pakket</label>
-                                <select name="pakket" required id="course-plan">
-                                    <option value="0">Ik weet het niet</option>
-                                    <option value="A">Pakket A</option>
-                                    <option value="B">Pakket B</option>
-                                    <option value="C">Pakket C</option>
-                                    <option value="D">Pakket D</option>
-                                </select>
+                              <label for="course-plan">Kies een pakket</label>
+                              <select name="pakket" required id="course-plan">
+                                <option value="0">Ik weet het niet</option>
+                                <option value="A">Pakket A</option>
+                                <option value="B">Pakket B</option>
+                                <option value="C">Pakket C</option>
+                                <option value="D">Pakket D</option>
+                              </select>
                             </div>
-
                             <div class="form-group">
-                                <label for="date">Gebeld worden op</label>
-                                <input name="date" required type="date" id="date">
+                              <label for="date">Gebeld worden op</label>
+                              <input name="date" required type="date" id="date">
                             </div>
-
+                            <input type="show" name="g-recaptcha-response" id="recaptchaResponse">
                             <div class="form-group">
-                                <button type="submit" class="btn style1 w-100 d-block" onclick="onSubmit()">Plan Het Gesprek</button>
+                              <button type="submit" class="btn style1 w-100 d-block">Plan Het Gesprek</button>
                             </div>
-                        </form>
+                          </form>
 
-                        <script src="https://www.google.com/recaptcha/api.js?render='{{ env('RECAPTCHA_SITE_KEY') }}'"></script>
-
-                        <script>
-                            function onSubmit() {
-                                grecaptcha.ready(function() {
-                                    grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', {action: 'submit'}).then(function(token) {
-                                        document.getElementById('recaptcha-token').value = token;
-                                    });
-                                });
-                            }
-                        </script>
+                          <script>
+                          grecaptcha.ready(function() {
+                            grecaptcha.execute('6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-', {action: 'submit'}).then(function(token) {
+                              document.getElementById('recaptchaResponse').value = token;
+                            });
+                          });
+                          </script>
 
 
 

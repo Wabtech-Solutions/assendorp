@@ -12,45 +12,44 @@ use App\Rules\ReCaptcha;
 class MailController extends Controller
 {
     public function planRijles(Request $request)
-    {
-        // Stap 1: Valideer de basisgegevens
-        $this->validate($request, [
-            'telefoon' => 'required',
-            'name' => 'required',
-            'date' => 'required',
-            'pakket' => 'required',
-            'recaptcha_token' => 'required',
-        ]);
+   {
+       // Stap 1: Valideer de basisgegevens
+       $this->validate($request, [
+           'telefoon' => 'required',
+           'name' => 'required',
+           'date' => 'required',
+           'pakket' => 'required',
+           'g-recaptcha-response' => 'required',
+       ]);
 
-        // Stap 2: Valideer de reCAPTCHA-token
-        $recaptchaToken = $request->input('recaptcha_token');
-        $secretKey = env('RECAPTCHA_SECRET_KEY');
+       // Stap 2: Valideer reCAPTCHA
+       $recaptcha_response = $request->input('g-recaptcha-response');
+       $recaptcha = new \ReCaptcha\ReCaptcha('6Lfi71UqAAAAAMVpI0XnSBTY_LbU00LO9BCjL1fT');
+       $resp = $recaptcha->setExpectedHostname($_SERVER['SERVER_NAME'])
+                         ->verify($recaptcha_response, $_SERVER['REMOTE_ADDR']);
 
-        // Maak de API-aanroep naar Google reCAPTCHA
-        $recaptchaResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaToken");
-        $recaptchaData = json_decode($recaptchaResponse);
+       if (!$resp->isSuccess()) {
+           return back()->withErrors(['captcha' => 'ReCaptcha verificatie mislukt. Probeer het opnieuw.']);
+       }
 
-        if (!$recaptchaData->success || $recaptchaData->score < 0.5) {
-            return back()->withErrors(['recaptcha' => 'ReCAPTCHA validatie mislukt.']);
-        }
+       // Stap 3: Verstuur de email na succesvolle validatie
+       Mail::send(
+           'mail.analyseMail',
+           [
+               'name' => $request->get('name'),
+               'telefoon' => $request->get('telefoon'),
+               'date' => $request->get('date'),
+               'pakket' => $request->get('pakket'),
+           ],
+           function ($message) use ($request) {
+               $message->from('info@autorijschoolassendorp.nl');
+               $message->to('info@autorijschoolassendorp.nl', 'Rob')
+                       ->subject('Een nieuwe aanmelding voor Autorijschool Assendorp');
+           }
+       );
 
-        // Stap 3: Verstuur de email na succesvolle validatie
-        Mail::send(
-            'mail.analyseMail', [
-                'name' => $request->get('name'),
-                'telefoon' => $request->get('telefoon'),
-                'date' => $request->get('date'),
-                'pakket' => $request->get('pakket'),
-            ],
-            function ($message) use ($request) {
-                $message->from('info@autorijschoolassendorp.nl');
-                $message->to('info@autorijschoolassendorp.nl', 'Rob')
-                    ->subject('Een nieuwe aanmelding voor Autorijschool Assendorp');
-            }
-        );
-
-        return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $request->get('date') . ' contact met je op.');
-    }
+       return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $request->get('date') . ' contact met je op.');
+   }
 
 
 
