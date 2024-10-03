@@ -96,7 +96,7 @@
                                 </div>
                             @endif
                         <div class="actie-banner">
-                            <h3>Speciale Actie: Gratis Intake Gesprek!</h3>
+                            <h3>Speciale Actie: Gratis Intake T.W.V. € 60,-!</h3>
                             <p>Plan nu een intakegesprek en profiteer van deze tijdelijke aanbieding.</p>
                         </div>
                         <h4 style="margin-bottom: 1px">Begin met lessen</h4>
@@ -128,7 +128,7 @@
                               <label for="date">Gebeld worden op</label>
                               <input name="date" required type="date" id="date">
                             </div>
-                            <input type="show" name="g-recaptcha-response" id="recaptchaResponse">
+                            <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
                             <div class="form-group">
                               <button type="submit" class="btn style1 w-100 d-block">Plan Het Gesprek</button>
                             </div>
