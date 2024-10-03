@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="assets/css/dark-theme.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <title>Rijschool Assendorp - Het adres voor een goede les!</title>
-        <meta name="description" content="Autorijschool Assendorp, het adres voor een goede les. ✓ Personlijke begelijding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓ Betaal in termijnen">
+        <meta name="description"
+            content="Autorijschool Assendorp, het adres voor een goede les. ✓ Personlijke begelijding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓ Betaal in termijnen">
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
 
@@ -58,10 +59,12 @@
                                 <div class="col-lg-7 col-md-10">
                                     <div class="hero-content" data-speed="0.10" data-revert="true">
                                         <h1>Het adres voor een goede les!</h1>
-                                        <p>Dat is wat al 20 jaar door mensen wordt gezegd. Autorijschool Assendorp is een betrouwbare
+                                        <p>Dat is wat al 20 jaar door mensen wordt gezegd. Autorijschool Assendorp is een
+                                            betrouwbare
                                             rijschool waar persoonlijke ondersteuning op 1 staat. Bij Autorijschool
                                             Assendorp in Zwolle haal je binnen No-Time je rijbewijs!</p>
-                                        <p>✓ Personlijke begeleiding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓ Betaal in termijnen</p>
+                                        <p>✓ Personlijke begeleiding ✓ Betaal in termijnen zonder kosten ✓ Goedkoop lessen ✓
+                                            Betaal in termijnen</p>
                                         <a href="/over" class="btn style1">Meer info</a>
                                         <div id="aanmelden"></div>
                                     </div>
@@ -83,59 +86,40 @@
                         </div>
                         <h4 style="margin-bottom: 1px">Begin met lessen</h4>
 
-                        <!-- Voeg deze script tag toe aan de <head> van je pagina -->
-<script src="https://www.google.com/recaptcha/api.js?render=6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-"></script>
+                        <form method="POST" action="/" class="booking-form" id="booking-form">
+                            @csrf
+                            <div class="form-group">
+                                <label for="name">Volledige Naam*</label>
+                                <input name="name" required type="text" id="name" placeholder="Naam">
+                            </div>
 
-<!-- Je bestaande formulier -->
-<form method="POST" action="/" class="booking-form" id="booking-form">
-    <input type="hidden" name="_token" value="8XqmCZWtaUVu4oeZpktFQb0Rfpehn5VRN8zrhcFB" autocomplete="off">
+                            <div class="form-group">
+                                <label for="telefoon">Telefoon*</label>
+                                <input name="telefoon" required type="tel" id="telefoon" placeholder="0612345678">
+                            </div>
 
-    <div class="form-group">
-        <label for="name">Volledige Naam*</label>
-        <input name="name" required="" type="text" id="name" placeholder="Naam" control-id="ControlID-1">
-    </div>
+                            <div class="form-group">
+                                <label for="course-plan">Kies een pakket</label>
+                                <select name="pakket" required id="course-plan">
+                                    <option value="0">Ik weet het niet</option>
+                                    <option value="A">Pakket A</option>
+                                    <option value="B">Pakket B</option>
+                                    <option value="C">Pakket C</option>
+                                    <option value="D">Pakket D</option>
+                                </select>
+                            </div>
 
-    <div class="form-group">
-        <label for="telefoon">Telefoon*</label>
-        <input name="telefoon" required="" type="number" id="telefoon" placeholder="0612345678" control-id="ControlID-2">
-    </div>
+                            <div class="form-group">
+                                <label for="date">Gebeld worden op</label>
+                                <input name="date" required type="date" id="date">
+                            </div>
 
-    <div class="form-group">
-        <label for="course-plan">Kies een pakket</label>
-        <select name="pakket" required="" id="course-plan" control-id="ControlID-7">
-            <option value="0">Ik weet het niet</option>
-            <option value="A">Pakket A</option>
-            <option value="B">Pakket B</option>
-            <option value="C">Pakket C</option>
-            <option value="D">Pakket D</option>
-        </select>
-    </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn style1 w-100 d-block">Plan Het Gesprek</button>
+                            </div>
+                        </form>
 
-    <div class="form-group">
-        <label for="date">Gebeld worden op</label>
-        <input name="date" required="" type="date" id="date" control-id="ControlID-4">
-    </div>
 
-    <!-- reCAPTCHA v3 hidden input -->
-    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-
-    <div class="form-group">
-        <button type="submit" class="btn style1 w-100 d-block" control-id="ControlID-5">Plan Het Gesprek</button>
-    </div>
-</form>
-
-<script>
-    grecaptcha.ready(function() {
-        document.getElementById('booking-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Voorkom standaard formulier inzending
-
-            grecaptcha.execute('6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-', {action: 'submit'}).then(function(token) {
-                document.getElementById('g-recaptcha-response').value = token;
-                document.getElementById('booking-form').submit(); // Verstuur het formulier als token is gegenereerd
-            });
-        });
-    });
-</script>
                     </div>
                 </div>
             </div>
@@ -158,11 +142,15 @@
                                 <div class="content-title style1">
                                     <span>Over ons</span>
                                     <h2>Autorijschool Assendorp</h2>
-                                    <p>Autorijschool Assendorp in Zwolle is een goede en betrouwbare rijschool die kwalitatief goede rijlessen aanbiedt met een goede prijs/kwaliteitsverhouding, waar al veel mensen voordelig zijn geslaagd voor het rijbewijs. </p>
+                                    <p>Autorijschool Assendorp in Zwolle is een goede en betrouwbare rijschool die
+                                        kwalitatief goede rijlessen aanbiedt met een goede prijs/kwaliteitsverhouding, waar
+                                        al veel mensen voordelig zijn geslaagd voor het rijbewijs. </p>
                                 </div>
                                 <div class="ceo-message">
-                                    <p>"Geduld en persoonlijke ondersteuning is de snelste weg naar een geslaagd examen."</p>
-                                    <h6>Rob, eigenaar, gecertificeerd rij instructeur, faalangst instructeur, RIS instructeur.</h6>
+                                    <p>"Geduld en persoonlijke ondersteuning is de snelste weg naar een geslaagd examen."
+                                    </p>
+                                    <h6>Rob, eigenaar, gecertificeerd rij instructeur, faalangst instructeur, RIS
+                                        instructeur.</h6>
                                 </div>
                                 <a href="/over" class="btn style1">Lees meer</a>
                             </div>
@@ -196,10 +184,12 @@
                                 </ul>
                                 <h3>Pakket A</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60
+                                        minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                        Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
@@ -226,10 +216,12 @@
                                 </ul>
                                 <h3>Pakket B</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60
+                                        minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                        Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
@@ -256,10 +248,12 @@
                                 </ul>
                                 <h3>Pakket C</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60
+                                        minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                        Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
@@ -286,10 +280,12 @@
                                 </ul>
                                 <h3>Pakket D</a></h3>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60 minuten</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60
+                                        minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel: Tussendtijdse toets</li>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                        Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
@@ -319,7 +315,7 @@
                         </div>
                     </div>
                     <div class="course-slider-one owl-carousel">
-                        <div class="course-card style2" >
+                        <div class="course-card style2">
                             <div class="course-info">
                                 <h3>Losse rijles</a></h3>
                                 <div class="course-author-wrap">
@@ -398,27 +394,30 @@
                             <div style="" class="">
                                 <div class="vehicle-card style2">
                                     <div class="vehicle-img">
-                                        <img src="/assets/img/ARA/home1.webp"
-                                            alt="Image">
+                                        <img src="/assets/img/ARA/home1.webp" alt="Image">
                                     </div>
                                     <div class="vehicle-info">
                                         <div class="row justify-content-center">
-                                        <div class="col-md-7">
-                                        <h3><a href="vehicle-details.html">Peugeot 208 (2020) </a></h3>
-                                        <p><i class="fa-solid fa-fan" style="color: #6c1a14;"></i> Airco Climate control
-                                            <br>
-                                            <i class="fa-solid fa-route" style="color: #6c1a14;"></i> Navigatie
-                                            <br>
-                                            <i class="fa-solid fa-gauge" style="color: #6c1a14;"></i> Cruisecontrol
-                                            <br>
-                                            <i class="fa-solid fa-camera" style="color: #6c1a14;"></i> Achteruitrij-camera
-                                            <br>
-                                            <i class="fa-solid fa-cube" style="color: #6c1a14;"></i> 3D Dashboard
-                                            <br>
-                                            <i class="fa-solid fa-gears" style="color: #6c1a14;"></i> Handgeschakeld
-                                        </p>
-                                    </div>
-                                </div>
+                                            <div class="col-md-7">
+                                                <h3><a href="vehicle-details.html">Peugeot 208 (2020) </a></h3>
+                                                <p><i class="fa-solid fa-fan" style="color: #6c1a14;"></i> Airco Climate
+                                                    control
+                                                    <br>
+                                                    <i class="fa-solid fa-route" style="color: #6c1a14;"></i> Navigatie
+                                                    <br>
+                                                    <i class="fa-solid fa-gauge" style="color: #6c1a14;"></i>
+                                                    Cruisecontrol
+                                                    <br>
+                                                    <i class="fa-solid fa-camera" style="color: #6c1a14;"></i>
+                                                    Achteruitrij-camera
+                                                    <br>
+                                                    <i class="fa-solid fa-cube" style="color: #6c1a14;"></i> 3D Dashboard
+                                                    <br>
+                                                    <i class="fa-solid fa-gears" style="color: #6c1a14;"></i>
+                                                    Handgeschakeld
+                                                </p>
+                                            </div>
+                                        </div>
                                         <a href="#aanmelden" class="btn style2">Plan je rijles<i
                                                 class="flaticon-right-arrow-1"></i></a>
                                     </div>
@@ -509,12 +508,14 @@
                          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
                          */
-                        var disqus_config = function () {
-                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        var disqus_config = function() {
+                            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier =
+                            PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                         };
-                        (function() {  // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                            var d = document,
+                                s = d.createElement('script');
 
                             s.src = 'https://autorijschoolassendorp.disqus.com/embed.js';
 
@@ -522,7 +523,8 @@
                             (d.head || d.body).appendChild(s);
                         })();
                     </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+                            rel="nofollow">comments powered by Disqus.</a></noscript>
 
                 </div>
             </section>
@@ -532,5 +534,4 @@
 
 
     </html>
-
 @endsection

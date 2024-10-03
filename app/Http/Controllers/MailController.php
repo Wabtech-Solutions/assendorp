@@ -19,18 +19,7 @@ class MailController extends Controller
             'name' => 'required',
             'date' => 'required',
             'pakket' => 'required',
-            'g-recaptcha-response' => 'required', // Controleer of de reCAPTCHA is ingevuld
         ]);
-
-        // Stap 2: Valideer reCAPTCHA
-        $recaptchaResponse = $request->input('g-recaptcha-response');
-        $secretKey = '6Lfi71UqAAAAAMVpI0XnSBTY_LbU00LO9BCjL1fT';
-        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptchaResponse}");
-        $responseKeys = json_decode($response, true);
-
-        if(!$responseKeys["success"] || $responseKeys["score"] < 0.5) {
-            return back()->withErrors(['recaptcha' => 'Recaptcha validatie mislukt, probeer opnieuw.']);
-        }
 
         // Stap 3: Verstuur de email na succesvolle validatie
         Mail::send(
