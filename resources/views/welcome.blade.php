@@ -80,14 +80,32 @@
                 <div class="container">
                     <div class="book-course-form">
                         <!-- Gratis intake actie banner -->
+                        @if (session('success'))
+                                    <div class="alert alert-success">
+                                        {{ session('success') }}
+                                    </div>
+                                @endif
+                                @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    Oeps! Er is iets mis gegaan.
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                         <div class="actie-banner">
                             <h3>Speciale Actie: Gratis Intake Gesprek!</h3>
                             <p>Plan nu een intakegesprek en profiteer van deze tijdelijke aanbieding.</p>
                         </div>
                         <h4 style="margin-bottom: 1px">Begin met lessen</h4>
 
+
                         <form method="POST" action="/" class="booking-form" id="booking-form">
                             @csrf
+                            <input type="hidden" name="recaptcha_token" id="recaptcha-token">
+
                             <div class="form-group">
                                 <label for="name">Volledige Naam*</label>
                                 <input name="name" required type="text" id="name" placeholder="Naam">
@@ -115,9 +133,22 @@
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn style1 w-100 d-block">Plan Het Gesprek</button>
+                                <button type="submit" class="btn style1 w-100 d-block" onclick="onSubmit()">Plan Het Gesprek</button>
                             </div>
                         </form>
+
+                        <script src="https://www.google.com/recaptcha/api.js?render='{{ env('RECAPTCHA_SITE_KEY') }}'"></script>
+
+                        <script>
+                            function onSubmit() {
+                                grecaptcha.ready(function() {
+                                    grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', {action: 'submit'}).then(function(token) {
+                                        document.getElementById('recaptcha-token').value = token;
+                                    });
+                                });
+                            }
+                        </script>
+
 
 
                     </div>
