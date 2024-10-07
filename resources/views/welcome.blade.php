@@ -81,68 +81,56 @@
                     <div class="book-course-form">
                         <!-- Gratis intake actie banner -->
                         @if (session('success'))
-                                    <div class="alert alert-success">
-                                        {{ session('success') }}
-                                    </div>
-                                @endif
-                                @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    Oeps! Er is iets mis gegaan.
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                Oeps! Er is iets mis gegaan.
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <div class="actie-banner">
-                            <h3>Speciale Actie: Gratis Intake T.W.V. € 60,-!</h3>
-                            <p>Plan nu een intakegesprek en profiteer van deze tijdelijke aanbieding.</p>
+                            <h3>Speciale Actie: Gratis Intake T.W.V. € 60,-</h3>
+                            <p>Plan nu een intake en profiteer van deze tijdelijke aanbieding!</p>
                         </div>
-                        <h4 style="margin-bottom: 1px">Begin met lessen</h4>
                         <script src="https://www.google.com/recaptcha/api.js?render=6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-"></script>
 
 
 
-                        <form method="POST" action="/" class="booking-form" id="booking-form">
-                            @csrf
-                            <div class="form-group">
-                              <label for="name">Volledige Naam*</label>
-                              <input name="name" required type="text" id="name" placeholder="Naam">
-                            </div>
-                            <div class="form-group">
-                              <label for="telefoon">Telefoon*</label>
-                              <input name="telefoon" required type="tel" id="telefoon" placeholder="0612345678">
-                            </div>
-                            <div class="form-group">
-                              <label for="course-plan">Kies een pakket</label>
-                              <select name="pakket" required id="course-plan">
-                                <option value="0">Ik weet het niet</option>
-                                <option value="A">Pakket A</option>
-                                <option value="B">Pakket B</option>
-                                <option value="C">Pakket C</option>
-                                <option value="D">Pakket D</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <label for="date">Gebeld worden op</label>
-                              <input name="date" required type="date" id="date">
-                            </div>
-                            <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse">
-                            <div class="form-group">
-                              <button type="submit" class="btn style1 w-100 d-block">Plan Het Gesprek</button>
-                            </div>
-                          </form>
 
-                          <script>
-                          grecaptcha.ready(function() {
-                            grecaptcha.execute('6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-', {action: 'submit'}).then(function(token) {
-                              document.getElementById('recaptchaResponse').value = token;
+
+                        <script>
+                            $(document).ready(function() {
+                                $('#aanForm-multisteps-form').on('submit', function(event) {
+                                    event.preventDefault(); // Voorkom standaard formulier gedrag
+
+                                    $.ajax({
+                                        url: $(this).attr('action'), // De actie van het formulier
+                                        type: 'POST',
+                                        data: $(this).serialize(), // Seriële gegevens van het formulier
+                                        success: function(response) {
+                                            // Hier kun je iets doen met de response van de server
+                                            alert('Formulier succesvol verzonden!'); // Bijvoorbeeld een alert
+                                            // Je kunt ook de formulierwaarden resetten of een ander bericht tonen
+                                            $('#aanForm-multisteps-form')[0].reset(); // Reset het formulier
+                                        },
+                                        error: function(xhr) {
+                                            // Hier kun je foutafhandeling doen
+                                            alert('Er is een fout opgetreden: ' + xhr.responseText);
+                                        }
+                                    });
+                                });
                             });
-                          });
-                          </script>
+                        </script>
 
 
+                        @include('aanmeldform')
 
                     </div>
                 </div>
@@ -535,7 +523,7 @@
                         var disqus_config = function() {
                             this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
                             this.page.identifier =
-                            PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                         };
                         (function() { // DON'T EDIT BELOW THIS LINE
                             var d = document,

@@ -3604,7 +3604,7 @@ select {
 }
 
 .book-course-wrap.style1 .book-course-form {
-  background-color: #fff;
+  background-color: #e9e9e9;
   padding: 45px 40px 50px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -7179,3 +7179,4 @@ article .post-img img {
   background-color: #94be5d;
 }
 /*# sourceMappingURL=style.css.map */
+

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
 use Illuminate\Support\Facades\Http;
+use Carbon\Carbon;
 
 
 use App\Rules\ReCaptcha;
@@ -21,6 +22,9 @@ class MailController extends Controller
            'pakket' => 'required',
            'g-recaptcha-response' => 'required',
        ]);
+
+       $formattedDate = Carbon::parse($request->date)->translatedFormat('l j F');
+
 
        // Stap 2: Valideer reCAPTCHA
        $recaptcha_response = $request->input('g-recaptcha-response');
@@ -48,7 +52,7 @@ class MailController extends Controller
            }
        );
 
-       return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $request->get('date') . ' contact met je op.');
+       return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $formattedDate . ' contact met je op.');
    }
 
 

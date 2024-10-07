@@ -15,6 +15,103 @@
         <link rel="icon" type="image/png" href="assets/img/favicon.png">
     </head>
 
+    <style>/* Algemeen styling voor de hele pagina */
+    
+
+        /* Contact sectie */
+        .contact-box-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            flex: 1 1 calc(33.333% - 10px);
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: #e28e04;
+            margin-right: 15px;
+        }
+
+        .contact-info h5 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-info a, .contact-info p {
+            color: #555;
+        }
+
+        /* Responsive grid layout voor content */
+        .about-wrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+
+        .about-wrap ul {
+            padding-left: 20px;
+        }
+
+        .about-wrap li {
+            list-style: disc;
+        }
+
+        /* Knoppen styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #e28e04;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c17d03;
+        }
+
+        .btn.style1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Afbeeldingen */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive design voor mobiel */
+        @media (max-width: 768px) {
+            .contact-item {
+                flex: 1 1 100%;
+            }
+
+            .breadcrumb-wrap h1 {
+                font-size: 2rem;
+            }
+
+            .breadcrumb-menu li {
+                font-size: 1rem;
+            }
+        }
+        </style>
+
     <div class="content-wrapper">
         <div class="breadcrumb-wrap bg-f br-4">
             <div class="overlay op-8 bg-downriver"></div>
@@ -31,7 +128,7 @@
 
         <section class="about-wrap style1 ptb-100">
             <div class="container">
-                <h1>Autorijschool Assendorp: De Beste Rijschool in Zwolle</h1>
+                <h2>Autorijschool Assendorp: De Beste Rijschool in Zwolle</h2>
                 <p>Ben je op zoek naar een betrouwbare rijschool in Zwolle? Bij Autorijschool Assendorp staan we klaar om jou op een professionele manier te helpen je rijbewijs te halen. Met ervaren instructeurs, flexibele lestijden en betaalbare rijlespakketten, bieden we alles wat je nodig hebt om zelfverzekerd en veilig de weg op te gaan.</p>
 
                 <h2>Waarom Kiezen voor Autorijschool Assendorp in Zwolle?</h2>
@@ -41,6 +138,7 @@
                     <li><strong>Persoonlijke Begeleiding:</strong> Bij ons krijg je persoonlijke aandacht en begeleiding, zodat je stap voor stap jouw rijvaardigheden kunt ontwikkelen op je eigen tempo.</li>
                     <li><strong>Betaalbare Rijlespakketten:</strong> We bieden verschillende rijlespakketten aan die passen bij jouw behoeften en budget. Of je nu beginner bent of op zoek bent naar opfriscursussen, wij hebben een pakket voor jou.</li>
                 </ul>
+                <img src="https://free-images.com/lg/57a2/driving_school_driving_car_0.jpg" alt="Rijschool Zwolle - Autorijschool Assendorp" width="600" height="400">
 
                 <h2>Onze Populaire Rijlespakketten in Zwolle</h2>
                 <p>Bij Autorijschool Assendorp kun je kiezen uit diverse pakketten, afhankelijk van jouw leerbehoeften:</p>
