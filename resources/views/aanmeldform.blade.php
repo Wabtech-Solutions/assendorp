@@ -218,7 +218,7 @@
                                 placeholder="06-12345678">
                             <br>
                             <label for="aanForm-mail">Email*</label>
-                            <input type="email" id="aanForm-mail" name="telefoon" required
+                            <input type="email" id="aanForm-mail" name="mail" required
                                 placeholder="max@redbullracing.com">
                         </div>
                     </div>

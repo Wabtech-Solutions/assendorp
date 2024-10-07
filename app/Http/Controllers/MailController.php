@@ -20,6 +20,8 @@ class MailController extends Controller
            'name' => 'required',
            'date' => 'required',
            'pakket' => 'required',
+           'mail' => 'required',
+           'time' => 'required',
            'g-recaptcha-response' => 'required',
        ]);
 
@@ -42,7 +44,9 @@ class MailController extends Controller
            [
                'name' => $request->get('name'),
                'telefoon' => $request->get('telefoon'),
+               'mail' => $request->get('mail'),
                'date' => $request->get('date'),
+               'time' => $request->get('time'),
                'pakket' => $request->get('pakket'),
            ],
            function ($message) use ($request) {
