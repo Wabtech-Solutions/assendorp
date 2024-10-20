@@ -48,6 +48,7 @@ class MailController extends Controller
                'date' => $request->get('date'),
                'time' => $request->get('time'),
                'pakket' => $request->get('pakket'),
+               'date2' => $formattedDate
            ],
            function ($message) use ($request) {
                $message->from('info@autorijschoolassendorp.nl');
@@ -56,7 +57,25 @@ class MailController extends Controller
            }
        );
 
-       return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen op ' . $formattedDate . ' contact met je op.');
+       Mail::send(
+        'mail.customerConfirmation',
+        [
+            'name' => $request->get('name'),
+            'telefoon' => $request->get('telefoon'),
+            'mail' => $request->get('mail'),
+            'date' => $request->get('date'),
+            'time' => $request->get('time'),
+            'pakket' => $request->get('pakket'),
+            'date2' => $formattedDate
+        ],
+        function ($message) use ($request) {
+            $message->from('info@autorijschoolassendorp.nl', 'Autorijschool Assendorp');
+            $message->to($request->get('mail'), $request->get('name'))
+                    ->subject('Bevestiging van je aanmelding bij Autorijschool Assendorp');
+        }
+    );
+
+       return back()->with('success', 'Bedankt ' . $request->get('name') . ', we nemen voor ' . $formattedDate . ' contact met je op.');
    }
 
 

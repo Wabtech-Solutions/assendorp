@@ -228,7 +228,7 @@
                         <div class="aanForm-form-group">
                             <label for="aanForm-course-plan">Pakket*</label>
                             <select id="aanForm-course-plan" name="pakket" required>
-                                <option value="Gratis intake">Alleen kennismaken</option>
+                                <option value="Gratis Vrijblijvende Intake (60m)">Gratis Vrijblijvende Intake (60 minuten)</option>
                                 <option value="Pakket A">Pakket A</option>
                                 <option value="Pakket B">Pakket B</option>
                                 <option value="Pakket C">Pakket C</option>
@@ -432,7 +432,7 @@
             const today = new Date();
             // Voeg 7 dagen toe aan de huidige datum
             const minDate = new Date(today);
-            minDate.setDate(today.getDate() + 7);
+            minDate.setDate(today.getDate() + 1);
 
             // Zoek de eerstvolgende werkdag na de minimumdatum
             while (!isWorkingDay(minDate)) {
