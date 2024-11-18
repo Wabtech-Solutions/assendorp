@@ -20,6 +20,14 @@
             --window-height: 100vh;
             --font-family: 'Poppins', sans-serif;
         }
+        .book-course-form{
+            background-color: rgba(0, 0, 0, 0.416)!important;
+            backdrop-filter: blur(10px);
+            -webkit-box-shadow: 6px 5px 26px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 26px -3px rgba(0,0,0,0.75);
+box-shadow: 6px 5px 26px -3px rgba(0,0,0,0.75);
+
+        }
 
         .aanForm-container * {
             margin: 0;
@@ -228,7 +236,7 @@
                         <div class="aanForm-form-group">
                             <label for="aanForm-course-plan">Pakket*</label>
                             <select id="aanForm-course-plan" name="pakket" required>
-                                <option value="Gratis Vrijblijvende Intake (60m)">Gratis Vrijblijvende Intake (60 minuten)</option>
+                                <option value="Gratis Vrijblijvende Intake (Telefonisch)">Gratis Vrijblijvende Intake (Telefonisch)</option>
                                 <option value="Pakket A">Pakket A</option>
                                 <option value="Pakket B">Pakket B</option>
                                 <option value="Pakket C">Pakket C</option>

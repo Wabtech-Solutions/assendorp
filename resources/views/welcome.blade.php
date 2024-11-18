@@ -78,7 +78,7 @@
 
             <div class="book-course-wrap style1">
                 <div class="container">
-                    <div class="book-course-form">
+                    <div class="book-course-form" style="border-radius: 10px">
                         <!-- Gratis intake actie banner -->
                         @if (session('success'))
                             <div class="alert alert-success">
@@ -95,10 +95,7 @@
                                 </ul>
                             </div>
                         @endif
-                        <div class="actie-banner">
-                            <h3>Speciale Actie: Gratis Intake T.W.V. € 60,-</h3>
-                            <p>Plan nu een intake en profiteer van deze tijdelijke aanbieding!</p>
-                        </div>
+
                         <script src="https://www.google.com/recaptcha/api.js?render=6Lfi71UqAAAAANcMjb0UOa2lkQiyIlQRFNSk1WG-"></script>
 
 
