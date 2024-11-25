@@ -271,25 +271,25 @@
                                   </div>
                                   <div class="container22">
                                 <li>
-                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 13:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                                 <li>
-                                    <p style="color: white; font-size: 13px">08:00 - 18:00</p>
+                                    <p style="color: white; font-size: 13px">09:00 - 17:00</p>
                                 </li>
                             </div>
                         </div>
                                 <br>
                                 <li>
-                                    <p style="color: white; font-size: 13px">Zat- Zon- Feestdagen gesloten</p>
+                                    <p style="color: white; font-size: 13px">Zat - Zon & feestdagen gesloten</p>
                                 </li>
                             </ul>
 

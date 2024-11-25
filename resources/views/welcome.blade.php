@@ -187,7 +187,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>25 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -197,14 +197,14 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
                                 <div class="course-author-wrap">
 
-                                    <p class="course-price">€ 1992,-</p>
+                                    <p class="course-price">€ 2025,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
@@ -219,7 +219,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -229,7 +229,7 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
@@ -251,7 +251,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -261,7 +261,7 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
@@ -283,7 +283,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>45 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -293,7 +293,7 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Optioneel:
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
@@ -328,16 +328,7 @@
                             <div class="course-info">
                                 <h3>Losse rijles</a></h3>
                                 <div class="course-author-wrap">
-                                    <p class="course-price">€ 60,-</p>
-                                </div>
-                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
-                            </div>
-                        </div>
-                        <div class="course-card style2" id="diversen">
-                            <div class="course-info">
-                                <h3>Rijles in pakket</a></h3>
-                                <div class="course-author-wrap">
-                                    <p class="course-price">€ 58,-</p>
+                                    <p class="course-price">€ 63,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                             </div>
@@ -355,7 +346,7 @@
                             <div class="course-info">
                                 <h3>Praktijkexamen</a></h3>
                                 <div class="course-author-wrap">
-                                    <p class="course-price">€ 252,-</p>
+                                    <p class="course-price">€ 280,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                             </div>
@@ -364,25 +355,17 @@
                             <div class="course-info">
                                 <h3>Herexamen</a></h3>
                                 <div class="course-author-wrap">
-                                    <p class="course-price">€ 252,-</p>
+                                    <p class="course-price">€ 280,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                             </div>
                         </div>
-                        <div class="course-card style2" id="diversen">
-                            <div class="course-info">
-                                <h3>BNOR-examen</a></h3>
-                                <div class="course-author-wrap">
-                                    <p class="course-price">€ 300,-</p>
-                                </div>
-                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
-                            </div>
-                        </div>
+
                         <div class="course-card style2" id="diversen">
                             <div class="course-info">
                                 <h3>Faalangst examen</a></h3>
                                 <div class="course-author-wrap">
-                                    <p class="course-price">€ 300,-</p>
+                                    <p class="course-price">€ 325,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                             </div>
