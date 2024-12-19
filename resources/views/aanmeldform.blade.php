@@ -240,7 +240,6 @@ box-shadow: 6px 5px 26px -3px rgba(0,0,0,0.75);
                                 <option value="Pakket A">Pakket A</option>
                                 <option value="Pakket B">Pakket B</option>
                                 <option value="Pakket C">Pakket C</option>
-                                <option value="Pakket D">Pakket D</option>
                                 <option value="Ik weet het niet">Ik weet het niet</option>
                             </select>
                         </div>

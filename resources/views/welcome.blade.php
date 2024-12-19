@@ -197,14 +197,14 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Optioneel:</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
                                 <div class="course-author-wrap">
 
-                                    <p class="course-price">€ 2025,-</p>
+                                    <p class="course-price">€ 2175,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
@@ -219,7 +219,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -229,14 +229,14 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Optioneel:</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
                                 <div class="course-author-wrap">
 
-                                    <p class="course-price">€ 2282,-</p>
+                                    <p class="course-price">€ 2445,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
@@ -251,7 +251,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>35 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
@@ -261,46 +261,14 @@
                                         minuten</li>
                                 </ul>
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
+                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Optioneel:</B>
                                         Tussendtijdse toets</li>
                                 </ul>
                                 <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
 
                                 <div class="course-author-wrap">
 
-                                    <p class="course-price">€ 2572,-</p>
-                                </div>
-                                <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
-                                <a class="btn style2" href="#aanmelden">
-                                    Meld je aan <i class="flaticon-right-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="course-card style2"id="PakketD">
-                            <div class="course-img">
-                                <img src="assets/img/ARA/image7.webp" alt="Intrieur Lesauto">
-                            </div>
-                            <span class="label">Betaal in termijnen zonder kosten</span>
-                            <div class="course-info">
-                                <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>40 Lessen</li>
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
-                                        examen</li>
-                                </ul>
-                                <h3>Pakket D</a></h3>
-                                <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i>Lessen van 60
-                                        minuten</li>
-                                </ul>
-                                <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-dot" style="color: #6c1a14;"></i><B>Inclusief</B>
-                                        Tussendtijdse toets</li>
-                                </ul>
-                                <p>Meld je aan via onderstaande button, er wordt dan spoedig contact met je opgenomen.</p>
-
-                                <div class="course-author-wrap">
-
-                                    <p class="course-price">€ 2862,-</p>
+                                    <p class="course-price">€ 2695,-</p>
                                 </div>
                                 <p style="font-size: 10px; margin-bottom: 1px;">incl. BTW typefouten voorbehouden.</p>
                                 <a class="btn style2" href="#aanmelden">
