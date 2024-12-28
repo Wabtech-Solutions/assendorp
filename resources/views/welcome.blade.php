@@ -187,7 +187,7 @@
                             <span class="label">Betaal in termijnen zonder kosten</span>
                             <div class="course-info">
                                 <ul class="course-metainfo list-style">
-                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>25 Lessen</li>
+                                    <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>30 Lessen</li>
                                     <li><i class="fa-regular fa-circle-check" style="color: #6c1a14;"></i>Inclusief 1e
                                         examen</li>
                                 </ul>
